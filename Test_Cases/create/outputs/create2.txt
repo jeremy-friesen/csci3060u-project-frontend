@@ -1,0 +1,7 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter new account’s Username:
+Enter new account’s Password:
+Enter User Type:
+Error: Missing account information...

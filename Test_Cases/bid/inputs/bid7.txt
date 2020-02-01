@@ -1,0 +1,8 @@
+login
+fullUsername
+fullPassword
+bid
+basketball
+someUs3r
+
+15.50

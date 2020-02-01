@@ -1,0 +1,5 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter Username to delete:
+Error: User doesn’t exist

@@ -1,0 +1,5 @@
+login
+adminUsername
+adminPassword
+delete
+nonExistantUsername

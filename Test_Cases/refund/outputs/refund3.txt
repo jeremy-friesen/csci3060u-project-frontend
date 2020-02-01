@@ -1,0 +1,5 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter Buyer:
+Error: User “wrongUsername” does not exist or does not have buying privileges.

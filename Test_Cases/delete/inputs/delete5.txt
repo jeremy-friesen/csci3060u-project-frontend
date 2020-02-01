@@ -1,0 +1,8 @@
+login
+adminUsername
+adminPassword
+delete
+exampleUsername
+bid
+sneakers
+exampleUsername

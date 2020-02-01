@@ -1,0 +1,5 @@
+Enter Username:
+Enter Password:
+Enter Transaction:
+You are logged out.
+<Daily Transaction File>

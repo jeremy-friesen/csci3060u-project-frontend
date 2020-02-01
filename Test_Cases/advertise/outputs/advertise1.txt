@@ -1,0 +1,8 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter item name:
+Enter item price:
+Enter number of days you want the auction to last:
+
+Nintendo Switch has now been posted

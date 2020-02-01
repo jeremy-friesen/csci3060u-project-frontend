@@ -1,0 +1,8 @@
+login
+adminUsername
+adminPassword
+bid
+basketball
+someUs3r
+
+15.00

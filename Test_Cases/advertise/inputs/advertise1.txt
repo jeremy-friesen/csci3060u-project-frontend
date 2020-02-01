@@ -1,0 +1,7 @@
+login
+fullUsername
+fullPassword
+advertise
+Nintendo Switch
+350.00
+50

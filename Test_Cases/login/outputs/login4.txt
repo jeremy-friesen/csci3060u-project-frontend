@@ -1,0 +1,4 @@
+Enter Username:
+Enter Password:
+Enter Transaction:
+Error: Sorry! Your account does not have the privilege to access these transactions...

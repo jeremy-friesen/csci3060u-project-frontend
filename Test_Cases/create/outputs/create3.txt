@@ -1,0 +1,5 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter Username:
+Error: Username must be less than 15 characters

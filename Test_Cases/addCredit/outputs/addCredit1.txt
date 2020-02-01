@@ -1,0 +1,7 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter Username:
+Enter Credit Amount:
+Success! Credit amount has been transferred to the user!
+<Daily Transaction File>

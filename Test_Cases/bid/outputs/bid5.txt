@@ -1,0 +1,7 @@
+Enter Username:
+Enter Password:
+Enter Command:
+What is the item name?
+What is the seller’s username?
+
+Error: Seller’s username does not exist

@@ -1,0 +1,6 @@
+login
+fullUsername
+fullPassword
+bid
+basketball
+users1213

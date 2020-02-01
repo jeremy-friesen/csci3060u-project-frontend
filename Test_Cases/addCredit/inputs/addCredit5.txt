@@ -1,0 +1,5 @@
+login
+fullUsername
+fullPassword
+addCredit
+1001

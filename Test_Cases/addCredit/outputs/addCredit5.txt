@@ -1,0 +1,5 @@
+Enter Username:
+Enter Password:
+Enter Command:
+Enter Credit Amount:
+Error: Credit amount exceeds limit of $999.99

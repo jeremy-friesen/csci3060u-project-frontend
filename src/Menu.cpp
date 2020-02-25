@@ -1,119 +1,100 @@
-//Description: Class for which users will enter in commands that correspond with       //             their privileges
+//Description: Class for which users will enter in commands that correspond with       
+//their privileges
 //Contains functions that execute user commands
-class Menu
-{
+#include <String>
+#include <string.h>
+#include "User.cpp"
+#include "CurrentUserAccountsFileManager.cpp"
+#include <iostream>
+
+using namespace std;
+
+class Menu{
 
 private:
   string userCommand;
   User user;
   //Presents the login screen to the user
-  void login()
-  {
-    if (user)
-    {
-      cout << “Can’t login.User already logged in.” << endl;
+  void login(){
+    if(user.isLoggedIn()){
+      cout << "Can’t login.User already logged in." << endl;
       return;
     }
     string username;
-    cout << “Enter Username :”;
+    cout << "Enter Username :";
     cin >> username;
-    user = CurrentUserAccountsFileManager.login(username);
-    if (user)
-    {
-      cout << “Logged in successfully.” << endl;
-    }
-    else
-    {
-      cout << “Login unsuccessful.” << endl;
+    user = CurrentUserAccountsFileManager::login(username);
+    if(user.isLoggedIn()){
+      cout << "Logged in successfully." << endl;
+    } else{
+      cout << "Login unsuccessful." << endl;
     }
   }
 
   //Logs the user out of their account
-  void logout()
-  {
-    cout << “Thank you for visiting! Goodbye!” << endl;
-    User = NULL;
+  void logout(){
+    cout << "Thank you for visiting! Goodbye!" << endl;
+    user.logout();
   }
 
   //Admin: Can add credit to another user’s account or to their own account
   //Else: Can add credit to their own account
-  void addCredit(double amount)
-  {
-    user.addCredit(credits);
+  void addCredit(){
+    user.addCredit();
   }
 
   //Displays all options available to the user based on their account
-  void printMenu()
-  {
-    cout << “login” << endl;
-    cout << “logout” << endl;
+  void printMenu(){
+    cout << "login" << endl;
+    cout << "logout" << endl;
 
-    if (user.type == “admin”)
-    {
-      cout << “create user” << endl;
-      cout << “delete user” << endl;
-      cout << “bid” << endl;
-      cout << “advertise” << endl;
-      cout << “refund” << endl;
+    if (user.getUserType() == "admin"){
+      cout << "create user" << endl;
+      cout << "delete user" << endl;
+      cout << "bid" << endl;
+      cout << "advertise" << endl;
+      cout << "refund" << endl;
     }
 
-    else if (user.type == “standard - full” || user.type == “standard - buy”)
-    {
-      cout << “bid” << endl;
+    else if (user.getUserType() == "standard - full" || user.getUserType() == "standard - buy"){
+      cout << "bid" << endl;
     }
 
-    if (user.type == “standard - full” || user.type == “standard - sell”)
-    {
-      cout << “advertise” << endl;
+    if (user.getUserType() == "standard - full" || user.getUserType() == "standard - sell"){
+      cout << "advertise" << endl;
     }
 
-    cout << “add credit” << endl;
+    cout << "add credit" << endl;
   }
 
-  int main()
-  {
-    while (true)
-    {
-      cout << “Enter a command :” << endl;
+  int main(){
+    while (true){
+      cout << "Enter a command :" << endl;
       cin >> userCommand;
-      if (!user && userCommand != “login”)
-      {
-        cout << “Cannot process request, no user is logged in.\n”
-      }
-      else
-      {
-        switch (userCommand)
-        {
-        case “login”:
+      if (!user.isLoggedIn() && userCommand != "login"){
+        cout << "Cannot process request, no user is logged in.\n";
+      } else{
+        if(userCommand == "login"){
           login();
-          break;
-        case “add credit”:
+        }else if(userCommand == "add credit"){
           addCredit();
-          break;
-        case “bid”:
+        }else if(userCommand == "bid"){
           bid();
-          break;
-        case “advertise”:
+        }else if(userCommand == "advertise"){
           advertise();
-          break;
-        case “create user”:
+        }else if(userCommand == "create user"){
           createUser();
-          break;
-        case “delete user”:
+        }else if(userCommand == "delete user"){
           deleteUser();
-          break;
-        case “refund”:
+        }else if(userCommand == "refund"){
           refund();
-          break;
-        case “help”:
+        }else if(userCommand == "help"){
           printMenu();
-          break;
-        case “logout”:
+        }else if(userCommand == "logout"){
           logout();
-          break;
-        default:
-          cout << “Unrecognized command entered.
-               << “Please re - enter.\n”;
+        }else{
+          cout << "Unrecognized command entered."
+              << "Please re - enter.\n";
         }
       }
     }
@@ -121,46 +102,48 @@ private:
 
 protected:
   //Users who are not of type standard-sell can bid
-  void bid()
-  {
-    if (user.type != “standard - sell”)
+  void bid(){
+    if (user.getUserType() != "standard-sell"){
       user.bid();
-    else
-      cout << “Insufficient privileges.” << endl;
+    }else{
+      cout << "Insufficient privileges." << endl;
+    }
   }
 
   //Users who are not of type standard-sell can bid
-  void advertise()
-  {
-    if (user.type != “standard - buy”)
+  void advertise(){
+    if (user.getUserType() != "standard-buy"){
       user.advertise();
-    else
-      Cout << “Insufficient privileges.” << endl;
+    }else{
+      cout << "Insufficient privileges." << endl;
+    }
   }
 
   //Allows Admin to create new users
-  void createUser()
-  {
-    if (user.type == “admin”)
+  void createUser(){
+    if (user.getUserType() == "admin"){
       user.createUser();
-    else
-      cout << “Insufficient privileges.” << endl;
+    }else{
+      cout << "Insufficient privileges." << endl;
+    }
   }
 
   //Allows Admin to delete pre-existing users
-  void deleteUser()
-  {
-    if (user.type == “admin”)
+  void deleteUser(){
+    if (user.getUserType() == "admin"){
       user.deleteUser();
-    else
-      cout << “Insufficient privileges.” << endl;
+    }else{
+      cout << "Insufficient privileges." << endl;
+    }
   }
+
   //Allows an admin to issue credit from a buyer’s account to a seller’s account
-  void refund()
-  {
-    if (user.type == “admin”)
+  void refund(){
+    if (user.getUserType() == "admin"){
       user.refund();
-    else
-      cout << “Insufficient privileges.” << endl;
+    }else{
+      cout << "Insufficient privileges." << endl;
+    }
   }
-}
+
+} Menu;

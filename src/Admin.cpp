@@ -9,9 +9,9 @@ class Admin : public User
     string name;
     string type;
 
-    cout << “Enter a username for the new account” << endl;
+    cout << "Enter a username for the new account" << endl;
     cin >> name;
-    cout << “Enter type of user” << endl;
+    cout << "Enter type of user" << endl;
     cin >> type;
 
     User newUser(userName, userType);
@@ -21,7 +21,7 @@ class Admin : public User
   void deleteUser()
   {
     string name;
-    cout << “Enter the account name to delete “ << endl;
+    cout << "Enter the account name to delete " << endl;
     cin >> name;
     CurrentUserAccountsFileManager.delete(name);
   }
@@ -31,8 +31,8 @@ class Admin : public User
   {
     string name;
 
-    cout << “Enter the account’s username you wish to add credit to : “ cin >> name;
-    cout << “Enter credit amount : “ << endl;
+    cout << "Enter the account’s username you wish to add credit to : " cin >> name;
+    cout << "Enter credit amount : " << endl;
     cin >> amount;
 
     User user = CurrentUserAccountsFileManager.findUser(userName);
@@ -48,10 +48,10 @@ class Admin : public User
     string seller;
     double amount;
 
-    cout << “Enter the buyer’s account name : “ << endl;
+    cout << "Enter the buyer’s account name : " << endl;
     cin >> buyer;
-    cout << “Enter the seller’s account name : “ << endl cin >> seller;
-    cout << “Enter the amount of credit to transfer : “ << endl;
+    cout << "Enter the seller’s account name : " << endl cin >> seller;
+    cout << "Enter the amount of credit to transfer : " << endl;
     cin >> amount;
 
     User user1 = CurrentUserAccountsFileManager.findUser(buyer);
@@ -72,19 +72,19 @@ class Admin : public User
     string seller;
     double bidAmount
             cout
-        << “Enter an item name :”;
+        << "Enter an item name :";
     cin >> name;
-    cout << “Enter the seller name :”;
+    cout << "Enter the seller name :";
     cin >> seller;
     Item item = AvailableItemsFileManager.findItem(name, seller);
     double lastBid = item.currentBid;
     double amount;
-    cout << “Enter the amount to bid(current bid
-                                     :” << lastBid << “) :\n”;
+    cout << "Enter the amount to bid(current bid
+                                     :" << lastBid << ") :\n";
     cin >> amount;
     if (amount > credit)
     {
-      cout << “Not enough credit to place bid.\n” return;
+      cout << "Not enough credit to place bid.\n" return;
     }
     AvailableItemsFileManager.bid(name, seller, amount);
   }
@@ -92,12 +92,12 @@ class Admin : public User
   //Putting an item up for auction
   void advertise()
   {
-    cout << “Enter Item Name :”;
+    cout << "Enter Item Name :";
     string name;
     cin >> name;
-    cout << “Enter starting bid :” double minimumBid;
+    cout << "Enter starting bid :" double minimumBid;
     cin >> minimumBid;
-    cout << “Enter auction end date :” time_t endDate;
+    cout << "Enter auction end date :" time_t endDate;
     cin >> endDate;
     AvailableItemsFileManager.addItem(name, minimumBid, endDate, this);
   }

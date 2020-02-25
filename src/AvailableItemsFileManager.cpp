@@ -8,7 +8,7 @@ static class AvailableItemsFileManager{
 		std::ofstream outfile;
  
     outfile.open("AvailableItemsFile", std::ios_base::app);
-    outfile << "\n" << name << “_” << startingBid;
+    outfile << "\n" << name << "_" << startingBid;
     outfile.close();
     //todo: add endDate and seller to file
   }
@@ -17,7 +17,7 @@ static class AvailableItemsFileManager{
 	void bid(String name, String seller, double bid){
 		Item item = findItem(name, seller);
 		if(bid < item.currentBid){
-			cout << “Bid is less than current bid.” << endl;
+			cout << "Bid is less than current bid." << endl;
 			return;
 		}
 		updateBid(item, bid);

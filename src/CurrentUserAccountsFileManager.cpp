@@ -12,21 +12,21 @@ static class CurrentUserAccountsFileManager{
   }
 	
 	//Processes a login request from the menu and determines if the user exists
-	User login(string username){
+	public static User login(string username){
 		User user = findUser(username);
 		if(!user){
-			cout << “Login unsuccessful. No user with that name exists.\n”;
+			cout << "Login unsuccessful. No user with that name exists.\n";
 			return user;
 		}
 		else{
-      cout << “Login successful.” << endl;
+      cout << "Login successful." << endl;
       return new User(username, credit, type);
 		}
 	}
 	
 	//Finding existing user in Current User Accounts File
-	User findUser(string username){
-		ifstream in(“current_user_accounts”)
+	public static User findUser(string username){
+		ifstream in("current_user_accounts")
 		string line;
  		if (in.is_open()){
       while ( getline (myfile,line)){

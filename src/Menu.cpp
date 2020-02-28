@@ -146,4 +146,4 @@ protected:
     }
   }
 
-} Menu;
+};

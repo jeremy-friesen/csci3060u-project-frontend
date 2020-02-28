@@ -1,11 +1,18 @@
+#include <String>
+#include <string.h>
+#include "User.cpp"
+#include "CurrentUserAccountsFileManager.cpp"
+#include "AvailableItemsFileManager.cpp"
+#include <iostream>
+
+using namespace std;
+
 //Description: Class to represent Admin user
 //Contains functions only Admin users can use
-class Admin : public User
-{
+class Admin : public User{
 
   //Creating new users
-  void createUser()
-  {
+  void createUser(){
     string name;
     string type;
 
@@ -18,8 +25,7 @@ class Admin : public User
   }
 
   //Deleting pre-existing users
-  void deleteUser()
-  {
+  void deleteUser(){
     string name;
     cout << "Enter the account name to delete " << endl;
     cin >> name;
@@ -27,8 +33,7 @@ class Admin : public User
   }
 
   //Adding credit to another user in the system
-  void addCredit()
-  {
+  void addCredit(){
     string name;
 
     cout << "Enter the account’s username you wish to add credit to : " cin >> name;
@@ -42,8 +47,7 @@ class Admin : public User
   }
 
   //Issuing credit from a buyer’s account to seller’s account
-  void refund()
-  {
+  void refund(){
     string buyer;
     string seller;
     double amount;
@@ -66,38 +70,35 @@ class Admin : public User
   }
 
   //Placing bid on item
-  void bid()
-  {
+  void bid(){
     string name;
     string seller;
-    double bidAmount
-            cout
-        << "Enter an item name :";
+    double bidAmount;
+    cout << "Enter an item name :";
     cin >> name;
     cout << "Enter the seller name :";
     cin >> seller;
     Item item = AvailableItemsFileManager.findItem(name, seller);
     double lastBid = item.currentBid;
     double amount;
-    cout << "Enter the amount to bid(current bid
-                                     :" << lastBid << ") :\n";
+    cout << "Enter the amount to bid(current bid:" << lastBid << ") :\n";
     cin >> amount;
-    if (amount > credit)
-    {
+    if (amount > credit){
       cout << "Not enough credit to place bid.\n" return;
     }
     AvailableItemsFileManager.bid(name, seller, amount);
   }
 
   //Putting an item up for auction
-  void advertise()
-  {
+  void advertise(){
     cout << "Enter Item Name :";
     string name;
     cin >> name;
-    cout << "Enter starting bid :" double minimumBid;
+    cout << "Enter starting bid :";
+    double minimumBid;
     cin >> minimumBid;
-    cout << "Enter auction end date :" time_t endDate;
+    cout << "Enter auction end date :";
+    time_t endDate;
     cin >> endDate;
     AvailableItemsFileManager.addItem(name, minimumBid, endDate, this);
   }

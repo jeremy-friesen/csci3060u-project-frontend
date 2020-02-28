@@ -1,18 +1,24 @@
- 
+#include <String>
+#include <string.h>
+#include "User.cpp"
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
 //Description: Manages and updates data in the Current User Accounts File
 //Contains the transaction lines for all users in the system
 //Inputs
-#include <iostream>
-#include <fstream>
 static class CurrentUserAccountsFileManager{
 	
 	//Prints a summary of the data currently stored
 	void printSummary(){
- 
+		//TODO
   }
-	
+
+public:
 	//Processes a login request from the menu and determines if the user exists
-	public static User login(string username){
+	static User login(string username){
 		User user = findUser(username);
 		if(!user){
 			cout << "Login unsuccessful. No user with that name exists.\n";
@@ -20,13 +26,14 @@ static class CurrentUserAccountsFileManager{
 		}
 		else{
       cout << "Login successful." << endl;
-      return new User(username, credit, type);
+			User user(username, credit, type);
+			return user;
 		}
 	}
 	
 	//Finding existing user in Current User Accounts File
-	public static User findUser(string username){
-		ifstream in("current_user_accounts")
+	static User findUser(string username){
+		ifstream in("current_user_accounts");
 		string line;
  		if (in.is_open()){
       while ( getline (myfile,line)){

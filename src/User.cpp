@@ -1,3 +1,11 @@
+#include <String>
+#include <string.h>
+#include "CurrentUserAccountsFileManager.cpp"
+#include "AvailableItemsFileManager.cpp"
+#include <iostream>
+
+using namespace std;
+
 //Description: Abstract super class that defines every other account type
 //Contains information and functions that every user uses
 //Inputs: The user’s unique username, the user’s user type (admin, full-standard, etc)
@@ -51,7 +59,7 @@ public:
 	
 	//Returns the ID of the user as an integer
 	int getUserID(){
-		return userID
+		return userID;
 	}
 	
 	//Returns the amount of credits the account holds as double
@@ -66,15 +74,13 @@ public:
 		cout << "to add to your account" << endl;
 		cin >> amount;
 		
-		double balance = user.getCredits();
-		balance += amount;
-		user.setCredits(balance);
+		credits += amount;
 	}
 	
-	//Default Constructor
-	void User(string userName, string userType){
-		this.userName = userName;
-		this.userType = userType;
+	//Constructor
+	User(string userName, string userType){
+		this->userName = userName;
+		this->userType = userType;
 	}
  
 protected:
@@ -83,21 +89,21 @@ protected:
 
 	//Sets the name of the user
 	void setUserName(string userName){
-		this.userName = userName;
+		this->userName = userName;
 	}
  
 	//Sets the user type of the account
 	void setUserType(string userType){
-		this.userType = userType;
+		this->userType = userType;
 	}
 
 	//Sets the ID of the user
 	void setUserID(int userID){
-		this.userID = userID;
+		this->userID = userID;
 	}
 	
 	//Sets the amount of credits that the account holds
 	void setCredits(double credits){
-		this.credits = credits;
+		this->credits = credits;
 	}
-}
+};

@@ -3,6 +3,7 @@
 #include "User.cpp"
 #include "CurrentUserAccountsFileManager.cpp"
 #include <iostream>
+#include "Item.cpp"
 
 using namespace std;
 
@@ -25,10 +26,20 @@ public:
  
 	static void bid(string name, string seller, double bid){
 		Item item = findItem(name, seller);
-		if(bid < item.currentBid){
+		if(bid < item.getCurrentBid()){
 			cout << "Bid is less than current bid." << endl;
 			return;
 		}
 		updateBid(item, bid);
   }
-}
+
+	//TODO
+	static Item findItem(string name, string seller){
+		return Item();
+	}
+
+	//TODO
+	static void updateBid(Item item, double bid){
+		return;
+	}
+};

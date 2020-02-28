@@ -1,7 +1,6 @@
-#include <String>
 #include <string.h>
-#include "CurrentUserAccountsFileManager.cpp"
-#include "AvailableItemsFileManager.cpp"
+//#include "CurrentUserAccountsFileManager.cpp"
+//#include "AvailableItemsFileManager.cpp"
 #include <iostream>
 
 using namespace std;
@@ -17,13 +16,14 @@ public:
 	int userID;
 	
 	bool isLoggedIn(){
-		return loggedIn;
+		//return loggedIn; ----------change back
+		return userName != "";
 	}
 
 	void logout(){
 		userName = "";
 		userType = "";
-		userID = NULL;
+		userID = 0;
 		loggedIn = false;
 	}
 
@@ -64,7 +64,7 @@ public:
 	
 	//Returns the amount of credits the account holds as double
 	double getCredits(){
-		return credits;
+		return credit;
 	}
 	
 	//Add credit to their own account
@@ -74,18 +74,36 @@ public:
 		cout << "to add to your account" << endl;
 		cin >> amount;
 		
-		credits += amount;
+		credit += amount;
 	}
 	
-	//Constructor
+	//Constructors
 	User(string userName, string userType){
 		this->userName = userName;
 		this->userType = userType;
 	}
- 
+
+	User(string userName, string userType, double credit){
+		this->userName = userName;
+		this->userType = userType;
+		this->credit = credit;
+	}
+
+	//Default Constructor
+	User(){
+		this->userName = "";
+		this->userType = "";
+		this->credit = 0;
+	}
+
+	//Sets the amount of credits that the account holds
+	void setCredits(double credits){
+		this->credit = credit;
+	}
+
 protected:
-	double credits;
 	bool loggedIn;
+	double credit;
 
 	//Sets the name of the user
 	void setUserName(string userName){
@@ -100,10 +118,5 @@ protected:
 	//Sets the ID of the user
 	void setUserID(int userID){
 		this->userID = userID;
-	}
-	
-	//Sets the amount of credits that the account holds
-	void setCredits(double credits){
-		this->credits = credits;
 	}
 };

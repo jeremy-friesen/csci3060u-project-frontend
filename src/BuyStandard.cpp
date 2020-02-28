@@ -3,6 +3,7 @@
 #include "User.cpp"
 #include "CurrentUserAccountsFileManager.cpp"
 #include "AvailableItemsFileManager.cpp"
+#include "Item.cpp"
 #include <iostream>
 
 using namespace std;
@@ -19,14 +20,15 @@ class BuyStandard : public User{
     cin >> name;
     cout << "Enter the seller name :";
     cin >> seller;
-    Item item = AvailableItemsFileManager.findItem(name, seller);
-    double lastBid = item.currentBid;
+    Item item = AvailableItemsFileManager::findItem(name, seller);
+    double lastBid = item.getCurrentBid();
     double amount;
     cout << "Enter the amount to bid(current bid:" << lastBid << ") :\n";
     cin >> amount;
     if (amount > credit){
-      cout << "Not enough credit to place bid.\n" return;
+      cout << "Not enough credit to place bid.\n";
+      return;
     }
-    AvailableItemsFileManager.bid(name, seller, amount);
+    AvailableItemsFileManager::bid(name, seller, amount);
   }
-}
+};

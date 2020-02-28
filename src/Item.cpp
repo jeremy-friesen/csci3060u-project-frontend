@@ -1,8 +1,8 @@
 #include <String>
 #include <string.h>
 #include "User.cpp"
-#include "CurrentUserAccountsFileManager.cpp"
-#include "AvailableItemsFileManager.cpp"
+//#include "CurrentUserAccountsFileManager.cpp"
+//#include "AvailableItemsFileManager.cpp"
 #include <iostream>
 
 using namespace std;
@@ -41,7 +41,8 @@ class Item{
 	void setBidEndDate(time_t bidEndDate) {
 		this->bidEndDate = bidEndDate;
 	}
-	
+
+public:
 	//Returns the name of the item as a string
 	string getItemName(){
 		return itemName;

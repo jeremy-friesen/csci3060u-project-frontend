@@ -1,109 +1,130 @@
-#include <String>
+#include <string>
 #include <string.h>
 #include "User.cpp"
-#include "CurrentUserAccountsFileManager.cpp"
-#include "AvailableItemsFileManager.cpp"
+//#include "AvailableItemsFileManager.cpp"
+#include "DailyTransactionFileManager.cpp"
 #include <iostream>
+#include "Item.cpp"
 
 using namespace std;
 
 //Description: Class to represent Admin user
 //Contains functions only Admin users can use
-class Admin : public User{
+class Admin : public User
+{
+
 
   //Creating new users
   void createUser(){
-    string name;
-    string type;
+    string username;
+    string userType;
 
-    cout << "Enter a username for the new account" << endl;
-    cin >> name;
-    cout << "Enter type of user" << endl;
-    cin >> type;
-
-    User newUser(userName, userType);
+    cout << "Enter a username for the new account:";
+    cin >> username;
+    cout << "Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):";
+    cin >> userType;
+    //TODO: query to make sure username is valid/not taken
+    //User newUser(username, userType);
+    DailyTransactionFileManager::addCreateUserTransaction(username, userType);
   }
 
+  /*
   //Deleting pre-existing users
   void deleteUser(){
-    string name;
-    cout << "Enter the account name to delete " << endl;
-    cin >> name;
-    CurrentUserAccountsFileManager::deleteUser(name);
-  }
+    string username;
+    cout << "Enter the account name to delete:";
+    cin >> username;
 
+
+    //TODO: find user in file before adding transaction
+    DailyTransactionFileManager::addDeleteUserTransaction(username);
+  }
+  */
+
+  // special functions moved to main.cpp due to circular dependency issue
+
+  /*
   //Adding credit to another user in the system
   void addCredit(){
-    string name;
+    string username;
     double amount;
 
-    cout << "Enter the account’s username you wish to add credit to : ";
-    cin >> name;
-    cout << "Enter credit amount : " << endl;
+    cout << "Enter the account’s username you wish to add credit to:";
+    cin >> username;
+    cout << "Enter credit amount:";
     cin >> amount;
+		
+		User user = CurrentUserAccountsFileManager::findUser(username);
 
-    User user = CurrentUserAccountsFileManager::findUser(userName);
-    double balance = user.getCredits;
-    balance += amount;
-    user.setCredits(balance);
+    DailyTransactionFileManager::addAddCreditTransaction(username, user.getUserType(), amount);
   }
 
-  //Issuing credit from a buyer’s account to seller’s account
+  //Issuing credit from a seller's account to buyer's account
   void refund(){
-    string buyer;
-    string seller;
+    string buyerUsername;
+    string sellerUsername;
     double amount;
 
     cout << "Enter the buyer’s account name : " << endl;
-    cin >> buyer;
+    cin >> buyerUsername;
     cout << "Enter the seller’s account name : " << endl;
-    cin >> seller;
+    cin >> sellerUsername;
     cout << "Enter the amount of credit to transfer : " << endl;
     cin >> amount;
 
-    User user1 = CurrentUserAccountsFileManager::findUser(buyer);
-    double balance = user1.getCredits();
-    balance += amount;
-    user1.setCredits(balance);
+    User buyer = CurrentUserAccountsFileManager::findUser(buyer);
+    User seller = CurrentUserAccountsFileManager::findUser(seller);
 
-    User user2 = CurrentUserAccountsFileManager::findUser(seller);
-    double balance = user2.getCredits();
-    balance -= amount;
-    user2.setCredits(balance);
+		DailyTransactionFileManager::addRefundTransaction(buyer.getUsername(), seller.getUsername(), amount);
   }
+  */
 
   //Placing bid on item
   void bid(){
-    string name;
+    string itemName;
     string seller;
     double bidAmount;
     cout << "Enter an item name :";
-    cin >> name;
+    cin >> itemName;
     cout << "Enter the seller name :";
     cin >> seller;
-    Item item = AvailableItemsFileManager::findItem(name, seller);
+    Item item = AvailableItemsFileManager::findItem(itemName, seller);
     double lastBid = item.getCurrentBid();
     double amount;
     cout << "Enter the amount to bid(current bid:" << lastBid << ") :\n";
     cin >> amount;
+
     if (amount > credit){
       cout << "Not enough credit to place bid.\n";
       return;
     }
-    AvailableItemsFileManager::bid(name, seller, amount);
+    //AvailableItemsFileManager::bid(name, seller, amount);
+		DailyTransactionFileManager::addBidTransaction(item.getItemName(), seller, username, amount);
   }
+  
 
   //Putting an item up for auction
   void advertise(){
     cout << "Enter Item Name :";
-    string name;
-    cin >> name;
+    string itemName;
+    cin >> itemName;
     cout << "Enter starting bid :";
     double minimumBid;
     cin >> minimumBid;
     cout << "Enter auction end date :";
-    time_t endDate;
-    cin >> endDate;
-    AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+    int numDays;
+    cin >> numDays;
+    //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+
+    DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
   }
+
+public:
+  //Constructors
+  Admin(string username, double credit){
+    this->username = username;
+    this->userType = "AA";
+    this->credit = credit;
+  }
+
 };

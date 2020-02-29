@@ -1,8 +1,9 @@
-#include <String>
+#include <string>
 #include <string.h>
 #include "User.cpp"
-#include "CurrentUserAccountsFileManager.cpp"
-#include "AvailableItemsFileManager.cpp"
+//#include "CurrentUserAccountsFileManager.cpp"
+//#include "AvailableItemsFileManager.cpp"
+#include "DailyTransactionFileManager.cpp"
 #include <iostream>
 
 using namespace std;
@@ -11,18 +12,29 @@ using namespace std;
 //Contains only an advertise function
 class SellStandard : public User
 {
+
   //Putting an item up for auction
-  void advertise()
-  {
+  void advertise(){
     cout << "Enter Item Name :";
-    string name;
-    cin >> name;
+    string itemName;
+    cin >> itemName;
     cout << "Enter starting bid :";
-     double minimumBid;
+    double minimumBid;
     cin >> minimumBid;
     cout << "Enter auction end date :";
-    time_t endDate;
-    cin >> endDate;
-    AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+    int numDays;
+    cin >> numDays;
+    //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+
+    DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
   }
+
+public:
+  //Constructors
+  SellStandard(string username, double credit){
+    this->username = username;
+    this->userType = "SS";
+    this->credit = credit;
+  }
+
 };

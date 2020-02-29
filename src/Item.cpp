@@ -1,4 +1,4 @@
-#include <String>
+#include <string>
 #include <string.h>
 #include "User.cpp"
 //#include "CurrentUserAccountsFileManager.cpp"
@@ -11,15 +11,42 @@ using namespace std;
 //Contains the item name, ID, description, current bid price and bid end date
 //Inputs
 class Item{
+private:
 	string itemName;
+	string sellerName;
 	int itemID;
 	string description;
 	double currentBid;
 	time_t bidEndDate;
-	
+
+public:
+	//Constructors
+	Item(string itemName, string sellerName){
+		this->itemName = itemName;
+		this->sellerName = sellerName;
+	}
+
+	Item(string itemName, string sellerName, double currentBid){
+		this->itemName = itemName;
+		this->sellerName = sellerName;
+		this->currentBid = currentBid;
+	}
+
+	Item(string itemName, string sellerName, double currentBid, time_t bidEndDate){
+		this->itemName = itemName;
+		this->sellerName = sellerName;
+		this->currentBid = currentBid;
+		this->bidEndDate = bidEndDate;
+	}
+
 	//Sets the name of the item
 	void setItemName(string itemName) {
 		this->itemName = itemName;
+	}
+
+	//sets the seller's name
+	void setSellerName(string sellerName){
+		this->sellerName = sellerName;
 	}
 	
 	//Sets the ID of the item
@@ -42,10 +69,13 @@ class Item{
 		this->bidEndDate = bidEndDate;
 	}
 
-public:
 	//Returns the name of the item as a string
 	string getItemName(){
 		return itemName;
+	}
+
+	string getSellerName(){
+		return sellerName;
 	}
 	
 	//Returns the ID of an item as an integer
@@ -67,5 +97,4 @@ public:
 	time_t getBidEndDate(){
 		return bidEndDate;
 	}
- 
 };

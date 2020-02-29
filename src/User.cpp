@@ -11,17 +11,17 @@ using namespace std;
 class User{
 	
 public:
-	string userName;
+	string username;
 	string userType;
 	int userID;
 	
 	bool isLoggedIn(){
 		//return loggedIn; ----------change back
-		return userName != "";
+		return username != "";
 	}
 
 	void logout(){
-		userName = "";
+		username = "";
 		userType = "";
 		userID = 0;
 		loggedIn = false;
@@ -49,7 +49,7 @@ public:
 
 	//Returns the username of the account as a string
 	string getUsername(){
-		return userName;
+		return username;
 	}
 	
 	//Returns the type of user as a string
@@ -78,20 +78,20 @@ public:
 	}
 	
 	//Constructors
-	User(string userName, string userType){
-		this->userName = userName;
+	User(string username, string userType){
+		this->username = username;
 		this->userType = userType;
 	}
 
-	User(string userName, string userType, double credit){
-		this->userName = userName;
+	User(string username, string userType, double credit){
+		this->username = username;
 		this->userType = userType;
 		this->credit = credit;
 	}
 
 	//Default Constructor
 	User(){
-		this->userName = "";
+		this->username = "";
 		this->userType = "";
 		this->credit = 0;
 	}
@@ -106,8 +106,8 @@ protected:
 	double credit;
 
 	//Sets the name of the user
-	void setUserName(string userName){
-		this->userName = userName;
+	void setUserName(string username){
+		this->username = username;
 	}
  
 	//Sets the user type of the account

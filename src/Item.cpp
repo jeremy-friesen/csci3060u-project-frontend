@@ -1,6 +1,6 @@
 #include <string>
 #include <string.h>
-#include "User.cpp"
+//#include "User.cpp"
 //#include "CurrentUserAccountsFileManager.cpp"
 //#include "AvailableItemsFileManager.cpp"
 #include <iostream>

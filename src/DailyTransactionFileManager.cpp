@@ -1,6 +1,6 @@
 #include <string>
 #include <string.h>
-#include "User.cpp"
+//#include "User.cpp"
 #include <iostream>
 #include <fstream>
 
@@ -81,7 +81,6 @@ public:
 		appendLine(line);
 	}
 
-	// COME BACK AFTER ANSWER FROM BAHARE
 	// called after add credit transaction
 	static void addAddCreditTransaction(string username, string userType, double addCredit){
 		string line = "06 ";
@@ -120,3 +119,5 @@ public:
 		appendLine(line);
 	}
 };
+
+string DailyTransactionFileManager::alternateFileName = "";

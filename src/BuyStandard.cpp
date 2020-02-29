@@ -1,9 +1,9 @@
 #include <string>
 #include <string.h>
-#include "User.cpp"
-#include "Item.cpp"
-#include "DailyTransactionFileManager.cpp"
-#include "AvailableItemsFileManager.cpp"
+//#include "User.cpp"
+//#include "Item.cpp"
+//#include "DailyTransactionFileManager.cpp"
+//#include "AvailableItemsFileManager.cpp"
 #include <iostream>
 
 using namespace std;

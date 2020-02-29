@@ -2,9 +2,9 @@
 #include <string.h>
 #include "User.cpp"
 //#include "AvailableItemsFileManager.cpp"
-#include "DailyTransactionFileManager.cpp"
+//#include "DailyTransactionFileManager.cpp"
 #include <iostream>
-#include "Item.cpp"
+//#include "Item.cpp"
 
 using namespace std;
 

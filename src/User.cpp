@@ -1,6 +1,9 @@
 #include <string.h>
 //#include "CurrentUserAccountsFileManager.cpp"
 //#include "AvailableItemsFileManager.cpp"
+#include "DailyTransactionFileManager.cpp"
+#include "AvailableItemsFileManager.cpp"
+//#include "Item.cpp"
 #include <iostream>
 
 using namespace std;

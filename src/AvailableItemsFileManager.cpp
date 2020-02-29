@@ -1,6 +1,6 @@
 #include <string>
 #include <string.h>
-#include "User.cpp"
+//#include "User.cpp"
 //#include "CurrentUserAccountsFileManager.cpp"
 #include <iostream>
 #include "Item.cpp"
@@ -10,7 +10,7 @@ using namespace std;
 
 //Description: Manages and updates data in the Available Items File
 //Contains the transaction lines for all items in the system
-static class AvailableItemsFileManager{
+class AvailableItemsFileManager{
 	string itemData;
 	
 public:	

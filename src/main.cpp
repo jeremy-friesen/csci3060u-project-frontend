@@ -146,11 +146,19 @@ void refund(){
 
 
 int main(int argc, char* argv[]){
-  if(argc > 1){
-    DailyTransactionFileManager::setFileName(argv[1]);
-  }else{
-    DailyTransactionFileManager::setFileName("");
+  // setting file i/o files from command line
+  if(argc > 3){
+    CurrentUserAccountsFileManager::setFileName(argv[1]);
+    AvailableItemsFileManager::setFileName(argv[2]);
+    DailyTransactionFileManager::setFileName(argv[3]);
+  } else if(argc > 2){
+    CurrentUserAccountsFileManager::setFileName(argv[1]);
+    AvailableItemsFileManager::setFileName(argv[2]);
+  } else if(argc > 1){
+    CurrentUserAccountsFileManager::setFileName(argv[1]);
   }
+
+  /// Transaction Loop
   while (true){
     cout << "Enter Transaction:" << endl;
     cin >> userCommand;

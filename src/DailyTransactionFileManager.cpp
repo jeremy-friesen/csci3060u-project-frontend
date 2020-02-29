@@ -18,12 +18,12 @@ private:
 	string bidTransaction;
 	*/
 	//const static string; defaultFileName = "DailyTransactionFile.txt";
-	static string alternateFileName;
+	static string fileName;
 
 public:
 	// used to set the file name if one is given in the command line
 	static void setFileName(string filename){
-		alternateFileName = filename;
+		fileName = filename;
 	}
 
 	static string formatUsername(string username){
@@ -59,11 +59,7 @@ public:
 	// use to write to file
 	static void appendLine(string line){
 		ofstream outfile;
-		if(alternateFileName != ""){
-			outfile.open(alternateFileName, ios_base::app);
-		}else{
-			outfile.open("DailyTransactionFile.txt", ios_base::app);
-		}
+		outfile.open(fileName, ios_base::app);
 		outfile << line;
 	}
 
@@ -120,4 +116,4 @@ public:
 	}
 };
 
-string DailyTransactionFileManager::alternateFileName = "";
+string DailyTransactionFileManager::fileName = "dailytransactionfile.txt";

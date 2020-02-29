@@ -11,20 +11,13 @@ using namespace std;
 //Description: Manages and updates data in the Available Items File
 //Contains the transaction lines for all items in the system
 class AvailableItemsFileManager{
-	string itemData;
-	
+	//string itemData;
+	static string fileName;
 public:	
-	/*
-	static void bid(string name, string seller, double bid){
-		Item item = findItem(name, seller);
-		if(bid < item.getCurrentBid()){
-			cout << "Bid is less than current bid." << endl;
-			return;
-		}
-		//updateBid(item, bid);
-  }
-	*/
 
+	static void setFileName(string fileName){
+		AvailableItemsFileManager::fileName = fileName;
+	}
 	// helper function to determine whether this line
 	// is the item line
 	static bool isItem(string line, string itemName){
@@ -52,7 +45,7 @@ public:
 	
 	//Finding existing user in Current User Accounts File
 	static Item findItem(string itemName, string sellerName){
-		ifstream in("AvailableItems.txt");
+		ifstream in("availableitems.txt");
 		string line;
 		int l = itemName.length();
 
@@ -69,3 +62,5 @@ public:
 		return Item("","",0);
 	}
 };
+
+string AvailableItemsFileManager::fileName = "availableitems.txt";

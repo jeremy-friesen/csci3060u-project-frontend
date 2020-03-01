@@ -1,1 +1,3 @@
-Error: No user is logged in
+Enter Transaction:
+Cannot process request, no user is logged in.
+Enter Transaction:

@@ -1,3 +1,4 @@
+#pragma once
 #include "DailyTransactionFileManager.h"
 
 //Description: Manages and updates the data stored in the Daily Transaction    //            File

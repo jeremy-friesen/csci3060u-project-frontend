@@ -1,3 +1,4 @@
+#pragma once
 #include "SellStandard.h"
 
 //Description: Class to represent a Sell-Standard user

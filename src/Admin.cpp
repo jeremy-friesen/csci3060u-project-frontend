@@ -1,3 +1,4 @@
+#pragma once
 #include "Admin.h"
 
 //Description: Class to represent Admin user

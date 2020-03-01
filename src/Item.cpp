@@ -1,3 +1,4 @@
+#pragma once
 #include "Item.h"
 
 //Description: The class that holds all information regarding any item in the system

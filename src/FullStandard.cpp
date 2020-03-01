@@ -1,3 +1,4 @@
+#pragma once
 #include "FullStandard.h"
 
 //Description: Class to represent a Full-Standard user

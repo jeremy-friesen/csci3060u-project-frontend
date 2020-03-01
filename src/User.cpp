@@ -1,3 +1,4 @@
+#pragma once
 #include "User.h"
 
 //Description: Abstract super class that defines every other account type

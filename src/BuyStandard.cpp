@@ -1,3 +1,4 @@
+#pragma once
 #include "BuyStandard.h"
 
 //Description: Class to represent a Buy-Standard user

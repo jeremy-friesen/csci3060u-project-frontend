@@ -1,3 +1,4 @@
+#pragma once
 #include "AvailableItemsFileManager.h"
 
 //Description: Manages and updates data in the Available Items File

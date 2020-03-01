@@ -1,3 +1,4 @@
+#pragma once
 #include "CurrentUserAccountsFileManager.h"
 
 //Description: Manages and updates data in the Current User Accounts File

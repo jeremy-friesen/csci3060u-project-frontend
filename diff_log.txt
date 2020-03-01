@@ -1,42 +1,8 @@
 ______________________________________________
-TEST login1.txt OUTPUT: BAD
-1,3c1,3
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
----
-> Enter Transaction:
-> Enter Username: Logged in successfully.
-> Enter Transaction:
-
-
-
-______________________________________________
-TEST login2.txt OUTPUT: BAD
-1,5c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Error: Already logged in
-< Enter Transaction:
----
-> Enter Transaction:
-> Enter Username: Logged in successfully.
-> Enter Transaction:
-> Error: Already logged in
-> Enter Transaction:
-
-
-
-______________________________________________
 TEST login3.txt OUTPUT: BAD
-1,3c1,3
-< Enter Transaction:
-< Enter Username: Login unsuccessful.
+3c3
 < Enter Transaction:
 ---
-> Enter Transaction:
-> Enter Username: Login unsuccessful.
 > Enter Transaction:
 \ No newline at end of file
 
@@ -44,17 +10,9 @@ TEST login3.txt OUTPUT: BAD
 
 ______________________________________________
 TEST login4.txt OUTPUT: BAD
-1,5c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Insufficient privileges.
+5c5
 < Enter Transaction:
 ---
-> Enter Transaction:
-> Enter Username: Logged in successfully.
-> Enter Transaction:
-> Insufficient privileges.
 > Enter Transaction:
 \ No newline at end of file
 
@@ -73,14 +31,6 @@ TEST login5.txt OUTPUT: BAD
 < Enter Transaction:
 ---
 > Enter Buyer:
-
-
-
-______________________________________________
-TEST login5.txt TRANSACTION: BAD
-1,2d0
-< 05                                 -1286546410290719174943719550318010728241155268557606440439529792067727938698849513684699260186072593861705728.000000
-< 05                                 -0.000000
 
 
 
@@ -334,10 +284,7 @@ TEST advertise1.txt OUTPUT: BAD
 
 ______________________________________________
 TEST advertise1.txt TRANSACTION: BAD
-1c1
-< 03 NintendoSwitch      fullUsername    050 350.00000003 NintendoSwitch      fullUsername    050 350.000000
-\ No newline at end of file
----
+0a1
 > 03 Nintendo Switch____ fullUsername___ 050 350.00
 \ No newline at end of file
 
@@ -374,14 +321,6 @@ TEST advertise3.txt OUTPUT: BAD
 
 
 ______________________________________________
-TEST advertise3.txt TRANSACTION: BAD
-1d0
-< 03 abcdefghijklmnopqrstuvwxyz fullUsername    32516 00.00000003 abcdefghijklmnopqrstuvwxyz fullUsername    32530 00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
 TEST advertise4.txt OUTPUT: BAD
 1,4c1,5
 < Enter Transaction:
@@ -394,14 +333,6 @@ TEST advertise4.txt OUTPUT: BAD
 > Enter item name:
 > Enter item price:
 > Error: Minimum bid price exceeds the max price of an item
-
-
-
-______________________________________________
-TEST advertise4.txt TRANSACTION: BAD
-1d0
-< 03 Nintendo            fullUsername    32629 00.00000003 Nintendo            fullUsername    32580 00.000000
-\ No newline at end of file
 
 
 
@@ -420,14 +351,6 @@ TEST advertise5.txt OUTPUT: BAD
 > Enter number of days you want the auction to last:
 > 
 > Error: Number of days exceeds the max amount of time the auction can last
-
-
-
-______________________________________________
-TEST advertise5.txt TRANSACTION: BAD
-1d0
-< 03 Nintendo            fullUsername    32724 00.00000003 Nintendo            fullUsername    32524 00.000000
-\ No newline at end of file
 
 
 
@@ -454,10 +377,7 @@ TEST bid1.txt OUTPUT: BAD
 
 ______________________________________________
 TEST bid1.txt TRANSACTION: BAD
-1c1
-< 04 basketball          user231         fullUsername    18.00000004 basketball          user231         fullUsername    18.000000
-\ No newline at end of file
----
+0a1
 > basketball_________ user231________ 018.00
 \ No newline at end of file
 
@@ -481,14 +401,6 @@ TEST bid10.txt OUTPUT: BAD
 > Current Highest Bid: $15
 > 
 > Error: You do not have sufficient credit to place a bid
-
-
-
-______________________________________________
-TEST bid10.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    16.00000004 basketball          someUs3r        fullUsername    16.000000
-\ No newline at end of file
 
 
 
@@ -526,14 +438,6 @@ TEST bid3.txt OUTPUT: BAD
 
 
 ______________________________________________
-TEST bid3.txt TRANSACTION: BAD
-1d0
-< 04                                     fullUsername    00.00000004                                     fullUsername    00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
 TEST bid4.txt OUTPUT: BAD
 1,6c1,5
 < Enter Transaction:
@@ -548,14 +452,6 @@ TEST bid4.txt OUTPUT: BAD
 > What is the item name?
 > 
 > Error: Item does not exist in the system
-
-
-
-______________________________________________
-TEST bid4.txt TRANSACTION: BAD
-1d0
-< 04                     exit            fullUsername    00.00000004                     exit            fullUsername    00.000000
-\ No newline at end of file
 
 
 
@@ -575,14 +471,6 @@ TEST bid5.txt OUTPUT: BAD
 > What is the seller�s username?
 > 
 > Error: Seller�s username does not exist
-
-
-
-______________________________________________
-TEST bid5.txt TRANSACTION: BAD
-1d0
-< 04 basketball          users1213       fullUsername    00.00000004 basketball          users1213       fullUsername    00.000000
-\ No newline at end of file
 
 
 
@@ -608,14 +496,6 @@ TEST bid6.txt OUTPUT: BAD
 
 
 ______________________________________________
-TEST bid6.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    13.00000004 basketball          someUs3r        fullUsername    13.000000
-\ No newline at end of file
-
-
-
-______________________________________________
 TEST bid7.txt OUTPUT: BAD
 1,6c1,8
 < Enter Transaction:
@@ -633,14 +513,6 @@ TEST bid7.txt OUTPUT: BAD
 > Current highest bid: $15
 > 
 > Error: Bid must be at least 5% greater than the current highest bid
-
-
-
-______________________________________________
-TEST bid7.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    15.50000004 basketball          someUs3r        fullUsername    15.500000
-\ No newline at end of file
 
 
 
@@ -665,14 +537,6 @@ TEST bid8.txt OUTPUT: BAD
 
 
 ______________________________________________
-TEST bid8.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        adminUsername   15.00000004 basketball          someUs3r        adminUsername   15.000000
-\ No newline at end of file
-
-
-
-______________________________________________
 TEST bid9.txt OUTPUT: BAD
 1,6c1,6
 < Enter Transaction:
@@ -688,14 +552,6 @@ TEST bid9.txt OUTPUT: BAD
 > What is the seller�s username?
 > 
 > Error: Cannot bid on your own item
-
-
-
-______________________________________________
-TEST bid9.txt TRANSACTION: BAD
-1d0
-< 04 basketball          currentUser     fullUsername    00.00000004 basketball          currentUser     fullUsername    00.000000
-\ No newline at end of file
 
 
 
@@ -721,10 +577,7 @@ TEST refund1.txt OUTPUT: BAD
 
 ______________________________________________
 TEST refund1.txt TRANSACTION: BAD
-1,2c1
-< 05 buyUsername     buyUsername     50.000000
-< 05 buyUsername     buyUsername     50.000000
----
+0a1
 > 05 buyUsername____ sellUsername___ 050.00
 \ No newline at end of file
 
@@ -750,14 +603,6 @@ TEST refund2.txt OUTPUT: BAD
 
 
 ______________________________________________
-TEST refund2.txt TRANSACTION: BAD
-1,2d0
-< 05 buyUsername     buyUsername     00.000000
-< 05 buyUsername     buyUsername     00.000000
-
-
-
-______________________________________________
 TEST refund3.txt OUTPUT: BAD
 1,7c1,4
 < Enter Transaction:
@@ -772,14 +617,6 @@ TEST refund3.txt OUTPUT: BAD
 > Enter Command:
 > Enter Buyer:
 > Error: User �wrongUsername� does not exist or does not have buying privileges.
-
-
-
-______________________________________________
-TEST refund3.txt TRANSACTION: BAD
-1,2d0
-< 05                                 114223304.414917
-< 05                                 -0.000000
 
 
 

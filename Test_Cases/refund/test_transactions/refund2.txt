@@ -1,2 +1,0 @@
-05 buyUsername     buyUsername     00.000000
-05 buyUsername     buyUsername     00.000000

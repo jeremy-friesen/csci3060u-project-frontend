@@ -34,10 +34,9 @@ do
 
     # test transaction files
     #echo "transaction: $filename"
-    if test ! -e "$i/test_transactions/$filename"
-    then
-      touch "$i/test_transactions/$filename"
-    fi
+    : > "$i/test_transactions/$filename"
+    touch "$i/test_transactions/$filename"
+
     if diff "$i/test_transactions/$filename" "$i/transactions/$filename";
     then
       echo "TEST $filename TRANSACTION: GOOD" >> ../test_results.txt

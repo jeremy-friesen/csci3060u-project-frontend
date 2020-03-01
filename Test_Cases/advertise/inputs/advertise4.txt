@@ -1,6 +1,6 @@
 login
 fullUsername
-fullPassword
 advertise
 Nintendo Switch
 1000.00
+exit

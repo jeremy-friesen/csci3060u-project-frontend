@@ -1,4 +1,4 @@
 login
 buyUsername
-buyStandardPassword
 advertise
+exit

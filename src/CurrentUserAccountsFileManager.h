@@ -27,7 +27,7 @@ public:
   static void setFileName(string filename);
   
 	//Processes a login request from the menu and determines if the user exists
-	static User login(string username);
+	static User* login(string username);
 
 	// helper function to determine if a CurrentUserAccounts 
 	// file line matches a given username
@@ -40,5 +40,5 @@ public:
 	static double parseCredit(string line);
 	
 	//Finding existing user in Current User Accounts File
-	static User findUser(string username);
+	static User* findUser(string username);
 };

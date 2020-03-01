@@ -17,14 +17,14 @@ void CurrentUserAccountsFileManager::setFileName(string filename){
 }
 
 //Processes a login request from the menu and determines if the user exists
-User CurrentUserAccountsFileManager::login(string username){
-	User user = findUser(username);
-	cout << "getUsername(): " << user.getUsername() << endl;
-	if(user.getUsername() != ""){
-		cout << "Login successful." << endl;
+User* CurrentUserAccountsFileManager::login(string username){
+	User* user = findUser(username);
+	//cout << "getUsername(): " << user->getUsername() << endl;
+	if(user->getUsername() != ""){
+		//cout << "Login successful." << endl;
 		return user;
 	}else{
-		cout << "Login unsuccessful. No user with that name exists.\n";
+		//cout << "Login unsuccessful. No user with that name exists.\n";
 		return user;
 	}
 }
@@ -55,37 +55,29 @@ double CurrentUserAccountsFileManager::parseCredit(string line){
 }
 
 //Finding existing user in Current User Accounts File
-User CurrentUserAccountsFileManager::findUser(string username){
+User* CurrentUserAccountsFileManager::findUser(string username){
 	ifstream in(fileName);
 	string line;
 	int l = username.length();
-	cout << fileName << endl;
 
 	if (in.is_open()){
 		while(getline(in,line)){
-			cout << "line: \"" << line << "\"" << endl;
 			if(isUser(line, username)){
-				cout << "isUser passed" << endl;
 				string type = parseUserType(line);
-				cout << "parsedUserType: " << type << endl;
 				double credit = parseCredit(line);
 				if(type == "AA"){
-					cout << "logged in admin:" << username << ", " << credit << endl;
-					return Admin(username, credit);
+					return new Admin(username, credit);
 				} else if(type == "FS"){
-					return FullStandard(username, credit);
+					return new FullStandard(username, credit);
 				} else if(type == "BS"){
-					return BuyStandard(username, credit);
+					return new BuyStandard(username, credit);
 				} else if(type == "SS"){
-					return SellStandard(username, credit);
+					return new SellStandard(username, credit);
 				}
 			}
 		}
 		in.close();
-	}else{
-		cout << "failed" << endl;
-		strerror(errno);
 	}
 	//cout << "CurrentUserAccountsFileManager::findUser : No user found" << endl;
-	return User("","",0);
+	return new Admin();
 }

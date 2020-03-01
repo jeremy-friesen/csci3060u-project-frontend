@@ -19,4 +19,12 @@ class BuyStandard : public User{
 public:
   //Constructors
   BuyStandard(string username, double credit);
+
+  void advertise();
+
+  void createUser();
+
+  void deleteUser();
+
+  void refund();
 };

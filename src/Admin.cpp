@@ -92,7 +92,6 @@ void Admin::bid(){
 	DailyTransactionFileManager::addBidTransaction(item.getItemName(), seller, username, amount);
 }
 
-
 //Putting an item up for auction
 void Admin::advertise(){
   cout << "Enter Item Name :";
@@ -121,3 +120,23 @@ Admin::Admin(){
   this->userType = "";
   this->credit = 0;
 }
+
+void Admin::deleteUser(){
+  cout << "Admin::deleteUser" << endl;
+}
+
+void Admin::refund(){
+  cout << "Admin::refundUser" << endl;
+}
+
+/*
+virtual void bid() =0;
+
+virtual void advertise() =0;
+
+virtual void createUser() =0;
+
+virtual void deleteUser() =0;
+
+virtual void refund() =0;
+*/

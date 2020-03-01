@@ -21,6 +21,7 @@ void User::logout(){
 	loggedIn = false;
 }
 
+/*
 void User::bid(){
 	cout << "You can't bid" << endl;
 }
@@ -40,6 +41,7 @@ void User::deleteUser(){
 void User::refund(){
 	cout << "You can't make refunds" << endl;
 }
+*/
 
 //Returns the username of the account as a string
 string User::getUsername(){

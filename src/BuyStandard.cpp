@@ -35,3 +35,18 @@ BuyStandard::BuyStandard(string username, double credit){
   this->credit = credit;
 }
 
+void BuyStandard::advertise(){
+  cout << "BuyStandard::advertise" << endl;
+}
+
+void BuyStandard::createUser(){
+  cout << "BuyStandard::createUser" << endl;
+}
+
+void BuyStandard::deleteUser(){
+  cout << "BuyStandard::deleteUser" << endl;
+}
+
+void BuyStandard::refund(){
+  cout << "BuyStandard::refund" << endl;
+}

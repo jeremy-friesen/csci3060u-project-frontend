@@ -50,3 +50,15 @@ FullStandard::FullStandard(string username, double credit){
   this->userType = "FS";
   this->credit = credit;
 }
+
+void FullStandard::createUser(){
+  cout << "FullStandard::createUser" << endl;
+}
+
+void FullStandard::deleteUser(){
+  cout << "FullStandard::deleteUser" << endl;
+}
+
+void FullStandard::refund(){
+	cout << "FullStandard::refund" << endl;
+}

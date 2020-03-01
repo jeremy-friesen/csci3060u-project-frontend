@@ -27,5 +27,9 @@ public:
   //Constructors
   Admin(string username, double credit);
 
+  void deleteUser();
+
+  void refund();
+
   Admin();
 };

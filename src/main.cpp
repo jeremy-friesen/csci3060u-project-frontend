@@ -9,7 +9,7 @@
 using namespace std;
 
 string userCommand;
-User* user = new User();
+User* user = new Admin();
 
 //Presents the login screen to the user
 void login(){
@@ -21,7 +21,7 @@ void login(){
   cout << "Enter Username :";
   cin >> username;
   //cout << "Username: \"" << username << "\"\n";
-  *user = CurrentUserAccountsFileManager::login(username);
+  user = CurrentUserAccountsFileManager::login(username);
   if(user->isLoggedIn()){
     cout << "Logged in successfully." << endl;
   } else{
@@ -49,9 +49,9 @@ void addCredit(){
     cout << "Enter credit amount:";
     cin >> amount;
 
-    User user = CurrentUserAccountsFileManager::findUser(username);
+    User* user = CurrentUserAccountsFileManager::findUser(username);
 
-    DailyTransactionFileManager::addAddCreditTransaction(username, user.getUserType(), amount);
+    DailyTransactionFileManager::addAddCreditTransaction(username, user->getUserType(), amount);
   }
 }
 
@@ -116,8 +116,8 @@ void deleteUser(){
     cout << "Enter the account name to delete:";
     cin >> username;
 
-    User userToDelete = CurrentUserAccountsFileManager::findUser(username);
-    DailyTransactionFileManager::addDeleteUserTransaction(username, userToDelete.getUserType());
+    User* userToDelete = CurrentUserAccountsFileManager::findUser(username);
+    DailyTransactionFileManager::addDeleteUserTransaction(username, userToDelete->getUserType());
   }else{
     cout << "Insufficient privileges." << endl;
   }
@@ -139,10 +139,10 @@ void refund(){
     cout << "Enter the amount of credit to transfer : " << endl;
     cin >> amount;
 
-    User buyer = CurrentUserAccountsFileManager::findUser(buyerUsername);
-    User seller = CurrentUserAccountsFileManager::findUser(buyerUsername);
+    User* buyer = CurrentUserAccountsFileManager::findUser(buyerUsername);
+    User* seller = CurrentUserAccountsFileManager::findUser(buyerUsername);
 
-    DailyTransactionFileManager::addRefundTransaction(buyer.getUsername(), seller.getUsername(), amount);
+    DailyTransactionFileManager::addRefundTransaction(buyer->getUsername(), seller->getUsername(), amount);
   }
 }
 

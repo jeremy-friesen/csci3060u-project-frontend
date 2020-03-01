@@ -30,3 +30,15 @@ SellStandard::SellStandard(string username, double credit){
   this->userType = "SS";
   this->credit = credit;
 }
+
+void SellStandard::createUser(){
+  cout << "SellStandard::createUser" << endl;
+}
+
+void SellStandard::deleteUser(){
+  cout << "SellStandard::deleteUser" << endl;
+}
+
+void SellStandard::refund(){
+  cout << "SellStandard::refund" << endl;
+}

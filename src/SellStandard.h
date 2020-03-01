@@ -21,4 +21,10 @@ class SellStandard : public User{
 public:
   //Constructors
   SellStandard(string username, double credit);
+
+  void createUser();
+
+  void deleteUser();
+
+  void refund();
 };

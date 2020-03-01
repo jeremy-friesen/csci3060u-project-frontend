@@ -24,4 +24,10 @@ class FullStandard : public User{
 public:
   //Constructors
   FullStandard(string username, double credit);
+
+  void createUser();
+
+  void deleteUser();
+
+  void refund();
 };

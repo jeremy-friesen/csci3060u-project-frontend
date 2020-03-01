@@ -1,1 +1,2 @@
-05 buyUsername____ sellUsername___ 050.0005 buyUsername     buyUsername     50.000000
+05 buyUsername     buyUsername     50.000000
+05 buyUsername     buyUsername     50.000000

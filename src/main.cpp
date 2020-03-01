@@ -134,8 +134,14 @@ void refund(){
 
     cout << "Enter the buyer’s account name : " << endl;
     cin >> buyerUsername;
+    if(buyerUsername == "exit"){
+      return;
+    }
     cout << "Enter the seller’s account name : " << endl;
     cin >> sellerUsername;
+    if(sellerUsername == "exit"){
+      return;
+    }
     cout << "Enter the amount of credit to transfer : " << endl;
     cin >> amount;
 
@@ -159,7 +165,6 @@ int main(int argc, char* argv[]){
   } else if(argc > 1){
     CurrentUserAccountsFileManager::setFileName(argv[1]);
   }
-
 
   /// Transaction Loop
   while (true){

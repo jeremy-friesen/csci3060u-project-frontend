@@ -1,5 +1,5 @@
 Enter Transaction:
-Enter Username :Logged in successfully.
+Enter Username: Logged in successfully.
 Enter Transaction:
 Unrecognized command entered.Please re - enter.
 Enter Transaction:

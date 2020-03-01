@@ -1,4 +1,4 @@
 Enter Transaction:
-Enter Username :Logged in successfully.
+Enter Username: Logged in successfully.
 Enter Transaction:
 Enter Item Name :Enter starting bid :Enter auction end date :Enter Transaction:

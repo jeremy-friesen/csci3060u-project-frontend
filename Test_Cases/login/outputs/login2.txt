@@ -1,3 +1,5 @@
-Enter Username:
+Enter Transaction:
+Enter Username: Logged in successfully.
 Enter Transaction:
 Error: Already logged in
+Enter Transaction:

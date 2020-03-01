@@ -11,11 +11,12 @@ using namespace std;
 
 //Description: Class to represent a Sell-Standard user
 //Contains only an advertise function
-class SellStandard : public User
-{
+class SellStandard : public User{
 
   //Putting an item up for auction
   void advertise();
+
+  void bid();
 
 public:
   //Constructors

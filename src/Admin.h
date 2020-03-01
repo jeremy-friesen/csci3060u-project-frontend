@@ -26,4 +26,6 @@ class Admin : public User
 public:
   //Constructors
   Admin(string username, double credit);
+
+  Admin();
 };

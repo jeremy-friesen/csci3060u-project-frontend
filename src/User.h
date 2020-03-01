@@ -23,15 +23,15 @@ public:
 
 	void logout();
 
-	void bid();
+	virtual void bid();
 
-	void advertise();
+	virtual void advertise();
 
-	void createUser();
+	virtual void createUser();
 
-	void deleteUser();
+	virtual void deleteUser();
 
-	void refund();
+	virtual void refund();
 
 	//Returns the username of the account as a string
 	string getUsername();

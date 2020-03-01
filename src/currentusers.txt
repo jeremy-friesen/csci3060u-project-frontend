@@ -1,1 +1,4 @@
-fullUsername
+fullUsername    FS 001000.00
+buyUsername     BS 009999.99
+sellUsername    SS 000000.00
+adminUsername   AA 000050.00

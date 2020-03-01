@@ -91,7 +91,7 @@ void Admin::bid(){
   //AvailableItemsFileManager::bid(name, seller, amount);
 	DailyTransactionFileManager::addBidTransaction(item.getItemName(), seller, username, amount);
 }
-  
+
 
 //Putting an item up for auction
 void Admin::advertise(){
@@ -114,4 +114,10 @@ Admin::Admin(string username, double credit){
   this->username = username;
   this->userType = "AA";
   this->credit = credit;
+}
+
+Admin::Admin(){
+  this->username = "";
+  this->userType = "";
+  this->credit = 0;
 }

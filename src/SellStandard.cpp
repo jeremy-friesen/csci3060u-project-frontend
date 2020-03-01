@@ -20,6 +20,10 @@ void SellStandard::advertise(){
   DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
 }
 
+void SellStandard::bid(){
+	cout << "You can't bid" << endl;
+}
+
 //Constructors
 SellStandard::SellStandard(string username, double credit){
   this->username = username;

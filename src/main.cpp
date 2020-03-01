@@ -20,6 +20,7 @@ void login(){
   string username;
   cout << "Enter Username :";
   cin >> username;
+  //cout << "Username: \"" << username << "\"\n";
   *user = CurrentUserAccountsFileManager::login(username);
   if(user->isLoggedIn()){
     cout << "Logged in successfully." << endl;
@@ -59,7 +60,7 @@ void printMenu(){
   cout << "login" << endl;
   cout << "logout" << endl;
 
-  if (user->getUserType() == "admin"){
+  if (user->getUserType() == "AA"){
     cout << "create user" << endl;
     cout << "delete user" << endl;
     cout << "bid" << endl;
@@ -67,11 +68,11 @@ void printMenu(){
     cout << "refund" << endl;
   }
 
-  else if (user->getUserType() == "standard - full" || user->getUserType() == "standard - buy"){
+  else if (user->getUserType() == "FS" || user->getUserType() == "BS"){
     cout << "bid" << endl;
   }
 
-  if (user->getUserType() == "standard - full" || user->getUserType() == "standard - sell"){
+  if (user->getUserType() == "FS" || user->getUserType() == "SS"){
     cout << "advertise" << endl;
   }
 
@@ -82,7 +83,8 @@ void printMenu(){
 //protected:
 //Users who are not of type standard-sell can bid
 void bid(){
-  if (user->getUserType() != "standard-sell"){
+  if (user->getUserType() != "SS"){
+    //cout << "user type: " << user->getUserType() << endl;
     user->bid();
   }else{
     cout << "Insufficient privileges." << endl;
@@ -91,7 +93,7 @@ void bid(){
 
 //Users who are not of type standard-sell can bid
 void advertise(){
-  if (user->getUserType() != "standard-buy"){
+  if (user->getUserType() != "BS"){
     user->advertise();
   }else{
     cout << "Insufficient privileges." << endl;
@@ -100,7 +102,7 @@ void advertise(){
 
 //Allows Admin to create new users
 void createUser(){
-  if (user->getUserType() == "admin"){
+  if (user->getUserType() == "AA"){
     user->createUser();
   }else{
     cout << "Insufficient privileges." << endl;
@@ -109,7 +111,7 @@ void createUser(){
 
 //Allows Admin to delete pre-existing users
 void deleteUser(){
-  if (user->getUserType() == "admin"){
+  if (user->getUserType() == "AA"){
     string username;
     cout << "Enter the account name to delete:";
     cin >> username;
@@ -123,7 +125,7 @@ void deleteUser(){
 
 //Allows an admin to issue credit from a buyer’s account to a seller’s account
 void refund(){
-  if (user->getUserType() != "admin"){
+  if (user->getUserType() != "AA"){
     cout << "Insufficient privileges." << endl;
   }else{
     string buyerUsername;

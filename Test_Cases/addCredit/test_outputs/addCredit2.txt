@@ -1,8 +1,13 @@
 Enter Transaction:
-Enter Username :Login successful.
-Login unsuccessful.
+Enter Username :currentusers.txt
+line: "fullUsername    FS 001000.00"
+isUser passed
+parsedUserType: FS
+getUsername(): fullUsername
+Login successful.
+Logged in successfully.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:

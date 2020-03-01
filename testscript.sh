@@ -1,11 +1,11 @@
 #!/bin/bash
 cd Test_Cases
-for i in * #for each transaction to test
+array=( login logout create delete advertise bid refund addCredit )
+for i in "${array[@]}" #for each transaction to test
 do
   echo "$i:"
   for j in $i/inputs/* #for each test case
   do
-
     #echo "running program with input: $j"
     filename=$(basename $j)
     #echo "first: $filename"

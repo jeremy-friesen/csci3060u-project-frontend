@@ -1,4 +1,3 @@
 Enter Transaction:
-Enter Username :Login successful.
-Login unsuccessful.
+Enter Username :Logged in successfully.
 Enter Transaction:

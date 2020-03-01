@@ -1,0 +1,7 @@
+Enter Transaction:
+Enter Username :Logged in successfully.
+Enter Transaction:
+Thank you for visiting! Goodbye!
+Enter Transaction:
+Cannot process request, no user is logged in.
+Enter Transaction:

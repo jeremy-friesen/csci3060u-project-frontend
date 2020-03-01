@@ -1,14 +1,267 @@
 Enter Transaction:
-Enter Username :Login successful.
-Login unsuccessful.
+Enter Username :Logged in successfully.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
 Enter Transaction:
-Cannot process request, no user is logged in.
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
 Enter Transaction:
-Cannot process request, no user is logged in.
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
+Enter Transaction:
+Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
 Enter Transaction:

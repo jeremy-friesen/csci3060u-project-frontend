@@ -1,10 +1,19 @@
 Enter Transaction:
-Enter Username :Login successful.
-Login unsuccessful.
+Enter Username :currentusers.txt
+line: "fullUsername    FS 001000.00"
+line: "buyUsername     BS 009999.99"
+line: "sellUsername    SS 000000.00"
+line: "adminUsername   AA 000050.00"
+isUser passed
+parsedUserType: AA
+logged in admin:adminUsername, 50
+getUsername(): adminUsername
+Login successful.
+Logged in successfully.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:
-Cannot process request, no user is logged in.
+Unrecognized command entered.Please re - enter.
 Enter Transaction:

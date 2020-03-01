@@ -158,13 +158,20 @@ int main(int argc, char* argv[]){
     CurrentUserAccountsFileManager::setFileName(argv[1]);
   }
 
+  
+  bool exitCondition = true;
+
   /// Transaction Loop
-  while (true){
+  while (exitCondition){
     cout << "Enter Transaction:" << endl;
     cin >> userCommand;
     if (!user->isLoggedIn() && userCommand != "login"){
-      //cout << "here" << endl;
-      cout << "Cannot process request, no user is logged in.\n";
+      if (userCommand == "exit"){
+        exitCondition = false;
+      }
+      else{
+        cout << "Cannot process request, no user is logged in.\n";
+      }
     }else{
       //cout << "here" << endl;
       if(userCommand == "login"){

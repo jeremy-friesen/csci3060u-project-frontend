@@ -1,3 +1,2 @@
 Enter Username:
-Enter Password:
 Enter Transaction:

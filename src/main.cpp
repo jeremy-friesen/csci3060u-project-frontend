@@ -14,11 +14,11 @@ User* user = new Admin();
 //Presents the login screen to the user
 void login(){
   if(user->isLoggedIn()){
-    cout << "Can’t login.User already logged in." << endl;
+    cout << "Error: Already logged in" << endl;
     return;
   }
   string username;
-  cout << "Enter Username :";
+  cout << "Enter Username: ";
   cin >> username;
   //cout << "Username: \"" << username << "\"\n";
   user = CurrentUserAccountsFileManager::login(username);

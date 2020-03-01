@@ -1,8 +1,0 @@
-login
-adminUsername
-delete
-exampleUsername
-bid
-sneakers
-exampleUsername
-exit

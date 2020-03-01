@@ -18,7 +18,7 @@ void FullStandard::bid(){
   double amount;
   cout << "Enter the amount to bid(current bid:" << lastBid << ") :\n";
   cin >> amount;
-
+  cout << "here" << endl;
   if (amount > credit){
     cout << "Not enough credit to place bid.\n";
     return;
@@ -29,6 +29,7 @@ void FullStandard::bid(){
 
 //Putting an item up for auction
 void FullStandard::advertise(){
+  //cout << "FullStandard::advertise" << endl;
   cout << "Enter Item Name :";
   string itemName;
   cin >> itemName;
@@ -39,7 +40,7 @@ void FullStandard::advertise(){
   int numDays;
   cin >> numDays;
   //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
-
+  //cout << "here" << endl;
   DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
 }
 

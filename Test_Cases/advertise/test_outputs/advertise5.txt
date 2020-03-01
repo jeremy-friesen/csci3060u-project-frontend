@@ -1,14 +1,4 @@
 Enter Transaction:
-Enter Username :Login successful.
-Login unsuccessful.
+Enter Username :Logged in successfully.
 Enter Transaction:
-Cannot process request, no user is logged in.
-Enter Transaction:
-Cannot process request, no user is logged in.
-Enter Transaction:
-Cannot process request, no user is logged in.
-Enter Transaction:
-Cannot process request, no user is logged in.
-Enter Transaction:
-Cannot process request, no user is logged in.
-Enter Transaction:
+Enter Item Name :Enter starting bid :Enter auction end date :Enter Transaction:

@@ -8,7 +8,6 @@
 
 using namespace std;
 
-string userCommand;
 User* user = new Admin();
 
 //Presents the login screen to the user
@@ -24,6 +23,7 @@ void login(){
   user = CurrentUserAccountsFileManager::login(username);
   if(user->isLoggedIn()){
     cout << "Logged in successfully." << endl;
+    //cout << "Account Type: " << user->getUserType();
   } else{
     cout << "Login unsuccessful." << endl;
   }
@@ -91,7 +91,7 @@ void bid(){
   }
 }
 
-//Users who are not of type standard-sell can bid
+//Users who are not of type standard-buy can advertise
 void advertise(){
   if (user->getUserType() != "BS"){
     user->advertise();
@@ -164,16 +164,23 @@ int main(int argc, char* argv[]){
   /// Transaction Loop
   while (true){
     cout << "Enter Transaction:" << endl;
+    string userCommand;
     cin >> userCommand;
-    
+    if(userCommand.empty()){
+      break;
+    }
+    /*
+    cout << "Here: userCommand:\n\""";
+    cout << userCommand;
+    cout << "\"" << endl;
+    */
+
     if (userCommand == "exit"){
       break;
     }
 
     if (!user->isLoggedIn() && userCommand != "login"){
-      
       cout << "Cannot process request, no user is logged in.\n";
-      
     }else{
       //cout << "here" << endl;
       if(userCommand == "login"){

@@ -1,11 +1,5 @@
 Enter Transaction:
-Enter Username :currentusers.txt
-line: "fullUsername    FS 001000.00"
-isUser passed
-parsedUserType: FS
-getUsername(): fullUsername
-Login successful.
-Logged in successfully.
+Enter Username :Logged in successfully.
 Enter Transaction:
 Unrecognized command entered.Please re - enter.
 Enter Transaction:

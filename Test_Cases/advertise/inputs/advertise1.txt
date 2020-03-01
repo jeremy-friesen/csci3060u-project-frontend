@@ -1,7 +1,7 @@
 login
 fullUsername
 advertise
-Nintendo Switch
+NintendoSwitch
 350.00
 50
 exit

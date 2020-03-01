@@ -6,6 +6,7 @@ do
   echo "$i:"
   for j in $i/inputs/* #for each test case
   do
+
     #echo "running program with input: $j"
     filename=$(basename $j)
     #echo "first: $filename"

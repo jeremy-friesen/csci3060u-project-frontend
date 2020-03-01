@@ -1,4 +1,5 @@
-Enter Username:
 Enter Transaction:
-You are logged out.
-<Daily Transaction File>
+Enter Username: Logged in successfully.
+Enter Transaction:
+Thank you for visiting! Goodbye!
+Enter Transaction:

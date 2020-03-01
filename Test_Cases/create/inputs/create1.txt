@@ -1,7 +1,7 @@
 login
 adminUsername
-adminPassword
 create
 newUsername
 newPassword
 admin
+exit

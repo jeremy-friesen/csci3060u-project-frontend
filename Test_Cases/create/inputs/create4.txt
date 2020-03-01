@@ -1,7 +1,6 @@
 login
 adminUsername
-adminPassword
 create
 user1
-secretP@ssw0rd
 full standard
+exit

@@ -1,5 +1,5 @@
 login
 fullUsername
-fullPassword
 addCredit
 5
+exit

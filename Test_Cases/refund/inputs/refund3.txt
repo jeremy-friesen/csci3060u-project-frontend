@@ -1,5 +1,5 @@
 login
 adminUsername
-adminPassword
 refund
 wrongUsername
+exit

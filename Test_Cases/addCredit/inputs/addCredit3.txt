@@ -1,6 +1,6 @@
 login
 adminUsername
-adminPassword
 addCredit
 invalidUsername
 5
+exit

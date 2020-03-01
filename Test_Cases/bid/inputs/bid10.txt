@@ -1,8 +1,7 @@
 login
 fullUsername
-fullPassword
 bid
 basketball
 someUs3r
-
 16
+exit

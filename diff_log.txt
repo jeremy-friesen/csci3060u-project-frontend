@@ -1,0 +1,3667 @@
+TEST addCredit1.txt TRANSACTION:
+TEST addCredit2.txt TRANSACTION:
+TEST addCredit3.txt TRANSACTION:
+TEST addCredit4.txt TRANSACTION:
+TEST addCredit5.txt TRANSACTION:
+TEST advertise1.txt TRANSACTION:
+TEST advertise2.txt TRANSACTION:
+TEST advertise3.txt TRANSACTION:
+TEST advertise4.txt TRANSACTION:
+TEST advertise5.txt TRANSACTION:
+TEST * TRANSACTION:
+TEST bid1.txt TRANSACTION:
+TEST bid10.txt TRANSACTION:
+TEST bid2.txt TRANSACTION:
+TEST bid3.txt TRANSACTION:
+TEST bid4.txt TRANSACTION:
+TEST bid5.txt TRANSACTION:
+TEST bid6.txt TRANSACTION:
+TEST bid7.txt TRANSACTION:
+TEST bid8.txt TRANSACTION:
+TEST bid9.txt TRANSACTION:
+TEST create1.txt TRANSACTION:
+TEST create2.txt TRANSACTION:
+TEST create3.txt TRANSACTION:
+TEST create4.txt TRANSACTION:
+TEST create5.txt TRANSACTION:
+TEST * TRANSACTION:
+TEST delete1.txt TRANSACTION:
+TEST delete2.txt TRANSACTION:
+TEST delete3.txt TRANSACTION:
+TEST delete4.txt TRANSACTION:
+TEST delete5.txt TRANSACTION:
+TEST login1.txt TRANSACTION:
+TEST addCredit1.txt TRANSACTION:
+TEST addCredit2.txt TRANSACTION:
+TEST addCredit3.txt TRANSACTION:
+TEST addCredit4.txt TRANSACTION:
+TEST addCredit5.txt TRANSACTION:
+TEST advertise1.txt TRANSACTION:
+TEST advertise2.txt TRANSACTION:
+TEST advertise3.txt TRANSACTION:
+TEST advertise4.txt TRANSACTION:
+TEST advertise5.txt TRANSACTION:
+TEST addCredit1.txt TRANSACTION:
+TEST addCredit2.txt TRANSACTION:
+TEST addCredit3.txt TRANSACTION:
+TEST addCredit4.txt TRANSACTION:
+TEST addCredit5.txt TRANSACTION:
+TEST advertise1.txt TRANSACTION:
+TEST advertise2.txt TRANSACTION:
+TEST advertise3.txt TRANSACTION:
+TEST advertise4.txt TRANSACTION:
+TEST advertise5.txt TRANSACTION:
+TEST addCredit1.txt TRANSACTION:
+TEST addCredit2.txt TRANSACTION:
+TEST addCredit3.txt TRANSACTION:
+TEST addCredit4.txt TRANSACTION:
+TEST addCredit5.txt TRANSACTION:
+TEST advertise1.txt TRANSACTION:
+TEST advertise2.txt TRANSACTION:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+TEST addCredit1.txt TRANSACTION:
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+TEST addCredit2.txt TRANSACTION:
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+TEST addCredit3.txt TRANSACTION:
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+TEST addCredit4.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+TEST addCredit5.txt TRANSACTION:
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+TEST advertise1.txt TRANSACTION:
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+TEST advertise2.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+TEST advertise3.txt TRANSACTION:
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+TEST advertise4.txt TRANSACTION:
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+TEST advertise5.txt TRANSACTION:
+TEST * TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+TEST bid1.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+TEST bid10.txt TRANSACTION:
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+TEST bid2.txt TRANSACTION:
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+TEST bid3.txt TRANSACTION:
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+TEST bid4.txt TRANSACTION:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+TEST bid5.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+TEST bid6.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+TEST bid7.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+TEST bid8.txt TRANSACTION:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+TEST bid9.txt TRANSACTION:
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+TEST create1.txt TRANSACTION:
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+TEST create2.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+TEST create3.txt TRANSACTION:
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+TEST create4.txt TRANSACTION:
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+TEST create5.txt TRANSACTION:
+TEST * TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+TEST delete1.txt TRANSACTION:
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+TEST delete2.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+TEST delete3.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+TEST delete4.txt TRANSACTION:
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+TEST delete5.txt TRANSACTION:
+TEST * TRANSACTION:
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:
+TEST login1.txt TRANSACTION:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+TEST * TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+TEST * TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+TEST * TRANSACTION:
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+TEST *.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+TEST *.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+TEST *.txt TRANSACTION:
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+TEST *.txt TRANSACTION:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+TEST *.txt TRANSACTION:
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+TEST *.txt TRANSACTION:
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to the user!
+> <Daily Transaction File>
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Success! Credit amount has been transferred to your account!
+> <Daily Transaction File>
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Given username does not exist in the system...
+1,10c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Credit Amount:
+> Error: Credit amount exceeds limit of $999.99
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Nintendo Switch has now been posted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have privileges
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Error: Item name exceeds character limit
+1,12c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Error: Minimum bid price exceeds the max price of an item
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter item name:
+> Enter item price:
+> Enter number of days you want the auction to last:
+> 
+> Error: Number of days exceeds the max amount of time the auction can last
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller's username?
+> 
+> Current highest bid: $15
+> 
+> Enter your bid amount:
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current Highest Bid: $15
+> 
+> Error: You do not have sufficient credit to place a bid
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: You do not have the privileges
+1,6c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item name and/or Seller name and/or bid amount cannot be left empty
+1,8c1,6
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> 
+> Error: Item does not exist in the system
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Seller’s username does not exist
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be at least 5% greater than the current highest bid
+1,12c1,9
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Current highest bid: $15
+> 
+> Error: Bid must be greater than the current highest bid
+1,10c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> What is the item name?
+> What is the seller’s username?
+> 
+> Error: Cannot bid on your own item
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Success! Account has been created!
+1,8c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Missing account information...
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username:
+> Error: Username must be less than 15 characters
+1,12c1,7
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter new account’s Username:
+> Enter new account’s Password:
+> Enter User Type:
+> Error: Username already exists...
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Not admin
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User existingUser successfully deleted
+1,6c1,4
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Error: Insufficient Privileges.
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: User doesn’t exist
+1,8c1,5
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> Error: Cannot delete your own account
+1,14c1,8
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+< Cannot process request, no user is logged in.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Command:
+> Enter Username to delete:
+> User exampleUsername successfully deleted
+> Enter Item:
+> Enter seller:
+> Error: Item does not exist in the system
+1,4c1,3
+< Enter Transaction:
+< Enter Username :Login successful.
+< Login unsuccessful.
+< Enter Transaction:
+---
+> Enter Username:
+> Enter Password:
+> Enter Transaction:

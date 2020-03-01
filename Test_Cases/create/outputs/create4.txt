@@ -1,7 +1,6 @@
 Enter Username:
-Enter Password:
 Enter Command:
-Enter new account’s Username:
-Enter new account’s Password:
+Enter new accountï¿½s Username:
+Enter new accountï¿½s Password:
 Enter User Type:
 Error: Username already exists...

@@ -1,3 +1,2 @@
 Enter Username:
-Enter Password:
-Error: Sorry! Invalid username and/or password entered…
+Error: Sorry! Invalid username and/or password enteredï¿½

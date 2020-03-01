@@ -1,6 +1,5 @@
 Enter Username:
-Enter Password:
 Enter Command:
 Enter Buyer:
 Enter Seller:
-Error: User “wrongUsername” does not exist or does not have selling privileges.
+Error: User ï¿½wrongUsernameï¿½ does not exist or does not have selling privileges.

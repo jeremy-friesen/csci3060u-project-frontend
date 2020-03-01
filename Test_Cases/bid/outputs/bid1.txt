@@ -1,8 +1,7 @@
 Enter Username:
-Enter Password:
 Enter Command:
 What is the item name?
-What is the seller's username?
+What is the seller�s username?
 
 Current highest bid: $15
 

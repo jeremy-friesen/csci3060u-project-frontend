@@ -1,4 +1,3 @@
 Enter Username:
-Enter Password:
 Enter Command:
 Error: You do not have the privileges

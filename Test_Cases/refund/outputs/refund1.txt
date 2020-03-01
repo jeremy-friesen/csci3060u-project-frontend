@@ -1,5 +1,4 @@
 Enter Username:
-Enter Password:
 Enter Command:
 Enter Buyer:
 Enter Seller:

@@ -1,4 +1,6 @@
-Enter Username:
-Enter Command:
-Enter Username:
-Error: Username must be less than 15 characters
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):
+Error: Username already exists...
+Enter Transaction:

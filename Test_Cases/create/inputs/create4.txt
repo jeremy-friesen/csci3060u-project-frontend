@@ -1,6 +1,5 @@
 login
 adminUsername
 create
-user1
-full standard
+newUsername123456
 exit

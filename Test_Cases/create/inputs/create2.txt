@@ -1,5 +1,0 @@
-login
-adminUsername
-create
-newUsername
-exit

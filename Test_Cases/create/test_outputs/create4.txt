@@ -1,6 +1,6 @@
 Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
-Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
-Unrecognized command entered.Please re - enter.
+Enter a username for the new account:
+Error: Username must be less than 15 characters
 Enter Transaction:

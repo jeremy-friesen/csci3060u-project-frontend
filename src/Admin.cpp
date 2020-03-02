@@ -11,6 +11,12 @@ void Admin::createUser(){
 
   cout << "Enter a username for the new account:";
   cin >> username;
+
+  if (username.length() > 15) {
+    cout << "Error: Username must be less than 15 characters" << endl;
+    return;
+  }
+
   cout << "Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):";
   cin >> userType;
   //TODO: query to make sure username is valid/not taken

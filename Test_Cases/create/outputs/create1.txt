@@ -1,6 +1,4 @@
-Enter Username:
-Enter Command:
-Enter new account�s Username:
-Enter new account�s Password:
-Enter User Type:
-Success! Account has been created!
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:

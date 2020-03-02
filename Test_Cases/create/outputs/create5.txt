@@ -1,3 +1,5 @@
-Enter Username:
-Enter Command:
-Error: Not admin
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Insufficient privileges.
+Enter Transaction:

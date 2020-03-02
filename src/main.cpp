@@ -61,8 +61,8 @@ void printMenu(){
   cout << "logout" << endl;
 
   if (user->getUserType() == "AA"){
-    cout << "create user" << endl;
-    cout << "delete user" << endl;
+    cout << "create user = 'create'" << endl;
+    cout << "delete user = 'delete'" << endl;
     cout << "bid" << endl;
     cout << "advertise" << endl;
     cout << "refund" << endl;
@@ -76,7 +76,7 @@ void printMenu(){
     cout << "advertise" << endl;
   }
 
-  cout << "add credit" << endl;
+  cout << "add credit = 'add'" << endl;
 }
 
 
@@ -132,21 +132,26 @@ void refund(){
     string sellerUsername;
     double amount;
 
-    cout << "Enter the buyer’s account name : " << endl;
+    cout << "Enter the buyer’s account name: " << endl;
     cin >> buyerUsername;
     if(buyerUsername == "exit"){
       return;
     }
-    cout << "Enter the seller’s account name : " << endl;
+    cout << "Enter the seller’s account name: " << endl;
     cin >> sellerUsername;
     if(sellerUsername == "exit"){
       return;
     }
-    cout << "Enter the amount of credit to transfer : " << endl;
+    cout << "Enter the amount of credit to transfer: " << endl;
     cin >> amount;
 
     User* buyer = CurrentUserAccountsFileManager::findUser(buyerUsername);
-    User* seller = CurrentUserAccountsFileManager::findUser(buyerUsername);
+    User* seller = CurrentUserAccountsFileManager::findUser(sellerUsername);
+
+    if(buyer->getUsername() == "" || seller->getUsername() == "") {
+      cout << "ERROR: One or both of the given users does not exist..." << endl;
+      return;
+    }
 
     DailyTransactionFileManager::addRefundTransaction(buyer->getUsername(), seller->getUsername(), amount);
   }
@@ -190,15 +195,15 @@ int main(int argc, char* argv[]){
       //cout << "here" << endl;
       if(userCommand == "login"){
         login();
-      }else if(userCommand == "add credit"){
+      }else if(userCommand == "add"){
         addCredit();
       }else if(userCommand == "bid"){
         bid();
       }else if(userCommand == "advertise"){
         advertise();
-      }else if(userCommand == "create user"){
+      }else if(userCommand == "create"){
         createUser();
-      }else if(userCommand == "delete user"){
+      }else if(userCommand == "delete"){
         deleteUser();
       }else if(userCommand == "refund"){
         refund();

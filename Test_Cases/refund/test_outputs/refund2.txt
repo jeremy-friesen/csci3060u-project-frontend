@@ -1,7 +1,0 @@
-Enter Transaction:
-Enter Username: Logged in successfully.
-Enter Transaction:
-Enter the buyer’s account name : 
-Enter the seller’s account name : 
-Enter the amount of credit to transfer : 
-Enter Transaction:

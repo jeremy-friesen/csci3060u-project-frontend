@@ -1,53 +1,55 @@
 #!/bin/bash
 
+# clear the previous test results
 : > test_results.txt
 : > diff_log.txt
 
 cd Test_Cases
-array=( login logout create delete advertise bid refund addCredit )
-for i in "${array[@]}" #for each transaction to test
+transactions=( login logout create delete advertise bid refund addCredit )
+
+# for each transaction to test
+for i in "${transactions[@]}"
 do
   echo "$i:"
-  for j in $i/inputs/* #for each test case
+  # for each test case
+  for j in $i/inputs/*
   do
-
-    #echo "running program with input: $j"
     filename=$(basename $j)
-    #echo "first: $filename"
-    #echo "output: > $i/test_outputs/$filename"
+    
+    # delete the daily transaction file before running program
+    : > "$i/test_transactions/$filename"
+    touch "$i/test_transactions/$filename"
+
+    # run program with alternate io files
     ../src/a.out currentusers.txt availableitems.txt $i/test_transactions/$filename < $j > $i/test_outputs/$filename
     
-    # test output files
-    #echo "out: $filename"
+    # find if there's a difference between expected output and generated output
     if diff $i/test_outputs/$filename $i/outputs/$filename;
     then
       echo "TEST $filename OUTPUT: GOOD" >> ../test_results.txt
     else
-      # If the file is not good document the issue
       echo "TEST $filename OUTPUT: BAD" >> ../test_results.txt
+
+      # add diff to diff log
       echo "______________________________________________" >> ../diff_log.txt
       echo "TEST $filename OUTPUT: BAD" >> ../diff_log.txt
       diff $i/test_outputs/$filename $i/outputs/$filename >> ../diff_log.txt
       echo $'\n\n' >> ../diff_log.txt
-      echo ""
     fi
 
-    # test transaction files
-    #echo "transaction: $filename"
-    : > "$i/test_transactions/$filename"
-    touch "$i/test_transactions/$filename"
-
+    # find if there's a difference between expected transaction file and generated transaction file
     if diff "$i/test_transactions/$filename" "$i/transactions/$filename";
     then
+      # ad
       echo "TEST $filename TRANSACTION: GOOD" >> ../test_results.txt
     else
-      # If the file is not good document the issue
       echo "TEST $filename TRANSACTION: BAD" >> ../test_results.txt
+
+      # add diff to diff_log
       echo "______________________________________________" >> ../diff_log.txt
       echo "TEST $filename TRANSACTION: BAD" >> ../diff_log.txt
       diff $i/test_transactions/$filename $i/transactions/$filename >> ../diff_log.txt
       echo $'\n\n' >> ../diff_log.txt
-      echo ""
     fi
   done
 done

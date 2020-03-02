@@ -42,9 +42,9 @@ Item AvailableItemsFileManager::findItem(string itemName, string sellerName){
 	int l = itemName.length();
 
 	if (in.is_open()){
-		cout << "is open" << endl;
+		//cout << "is open" << endl;
 		while(getline(in,line)){
-			cout << "line: " << line << endl;
+			//cout << "line: " << line << endl;
   		if(isItem(line, itemName)){
 				double currentBid = parseCurrentBid(line);
 				return Item(itemName, sellerName, currentBid);

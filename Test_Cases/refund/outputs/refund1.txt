@@ -1,6 +1,7 @@
-Enter Username:
-Enter Command:
-Enter Buyer:
-Enter Seller:
-Enter amount to refund:
-Refunded $50 from sellUsername to buyUsername
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Enter the buyer’s account name: 
+Enter the seller’s account name: 
+Enter the amount of credit to transfer: 
+Enter Transaction:

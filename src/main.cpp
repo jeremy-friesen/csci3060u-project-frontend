@@ -132,21 +132,26 @@ void refund(){
     string sellerUsername;
     double amount;
 
-    cout << "Enter the buyer’s account name : " << endl;
+    cout << "Enter the buyer’s account name: " << endl;
     cin >> buyerUsername;
     if(buyerUsername == "exit"){
       return;
     }
-    cout << "Enter the seller’s account name : " << endl;
+    cout << "Enter the seller’s account name: " << endl;
     cin >> sellerUsername;
     if(sellerUsername == "exit"){
       return;
     }
-    cout << "Enter the amount of credit to transfer : " << endl;
+    cout << "Enter the amount of credit to transfer: " << endl;
     cin >> amount;
 
     User* buyer = CurrentUserAccountsFileManager::findUser(buyerUsername);
-    User* seller = CurrentUserAccountsFileManager::findUser(buyerUsername);
+    User* seller = CurrentUserAccountsFileManager::findUser(sellerUsername);
+
+    if(buyer->getUsername() == "" || seller->getUsername() == "") {
+      cout << "ERROR: One or both of the given users does not exist..." << endl;
+      return;
+    }
 
     DailyTransactionFileManager::addRefundTransaction(buyer->getUsername(), seller->getUsername(), amount);
   }

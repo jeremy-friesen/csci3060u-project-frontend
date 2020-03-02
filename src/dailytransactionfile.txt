@@ -1,1 +1,4 @@
 04                     sellUsername    adminUsername   10.00000004                     sellUsername    adminUsername   10.000000
+05 buyUsername     buyUsername     10.000000
+05                                 10.000000
+05 buyUsername     sellUsername    10.000000

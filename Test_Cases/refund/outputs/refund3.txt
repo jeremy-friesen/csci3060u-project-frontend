@@ -1,4 +1,8 @@
-Enter Username:
-Enter Command:
-Enter Buyer:
-Error: User �wrongUsername� does not exist or does not have buying privileges.
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Enter the buyer’s account name: 
+Enter the seller’s account name: 
+Enter the amount of credit to transfer: 
+ERROR: One or both of the given users does not exist...
+Enter Transaction:

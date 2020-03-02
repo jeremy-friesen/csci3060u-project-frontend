@@ -1,7 +1,5 @@
 Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
-Unrecognized command entered.Please re - enter.
-Enter Transaction:
-Unrecognized command entered.Please re - enter.
+Enter the amount of credits you would like to add to your account
 Enter Transaction:

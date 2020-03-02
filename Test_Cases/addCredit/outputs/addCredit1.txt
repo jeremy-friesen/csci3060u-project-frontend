@@ -1,6 +1,4 @@
-Enter Username:
-Enter Command:
-Enter Username:
-Enter Credit Amount:
-Success! Credit amount has been transferred to the user!
-<Daily Transaction File>
+Enter Transaction:
+Enter Username: Logged in successfully.
+Enter Transaction:
+Enter the account’s username you wish to add credit to:Enter credit amount:Enter Transaction:

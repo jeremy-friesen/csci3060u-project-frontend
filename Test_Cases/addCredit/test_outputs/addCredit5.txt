@@ -2,4 +2,5 @@ Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
 Enter the amount of credits you would like to add to your account
+Error: Credit amount exceeds limit of $1000.00
 Enter Transaction:

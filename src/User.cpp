@@ -69,6 +69,11 @@ void User::addCredit(){
 	cout << "Enter the amount of credits you would like ";
 	cout << "to add to your account" << endl;
 	cin >> amount;
+
+	if (amount > 1000) {
+      cout << "Error: Credit amount exceeds limit of $1000.00" << endl;
+      return;
+    }
 		
 	credit += amount;
 }

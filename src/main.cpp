@@ -51,6 +51,16 @@ void addCredit(){
 
     User* user = CurrentUserAccountsFileManager::findUser(username);
 
+    if(user->getUsername() == "" ) {
+      cout << "Error: Given username does not exist in the system..." << endl;
+      return;
+    }
+
+    if (amount > 1000) {
+      cout << "Error: Credit amount exceeds limit of $1000.00" << endl;
+      return;
+    }
+
     DailyTransactionFileManager::addAddCreditTransaction(username, user->getUserType(), amount);
   }
 }

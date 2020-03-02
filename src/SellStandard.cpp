@@ -6,18 +6,45 @@
 
 //Putting an item up for auction
 void SellStandard::advertise(){
-  cout << "Enter Item Name :";
-  string itemName;
-  cin >> itemName;
-  cout << "Enter starting bid :";
-  double minimumBid;
-  cin >> minimumBid;
-  cout << "Enter auction end date :";
-  int numDays;
-  cin >> numDays;
-  //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+  //cout << "FullStandard::advertise" << endl;
+  const int nameLimit = 25;
+  const double bidLimit = 999.99;
+  const int maxDays = 100;
 
-  DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
+  string itemName;
+  double minimumBid;
+  int numDays;
+
+  cout << "Enter Item Name :";
+  cin.ignore();
+  getline(cin, itemName);
+
+  if (itemName.length() <= nameLimit ){
+    cout << "Enter starting bid :";
+    cin >> minimumBid;
+    if (minimumBid <= bidLimit){
+      cout << "Enter auction end date :";
+      cin >> numDays;
+      if (numDays <= maxDays){
+        cout << itemName << " has now been posted" << endl;
+        DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
+      }
+      else{
+        cout << "Error: Number of days exceeds max days" << endl;
+        return;
+      }
+    }else{
+      cout << "Error: Bid price exceeds max limit" << endl;
+      return;
+    }
+  }else{
+    cout << "Error: Item name exceeds character limit" << endl;
+    return;
+  }
+  
+  
+  //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
+ 
 }
 
 void SellStandard::bid(){

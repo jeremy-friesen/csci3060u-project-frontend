@@ -1,8 +1,4 @@
 Enter Username:
 Enter Command:
-What is the item name?
-What is the seller�s username?
-
-Current highest bid: $15
-
-Enter your bid amount:
+Enter an item name: Enter the seller name: Enter the amount to bid(current bid:10):
+Enter Transaction:

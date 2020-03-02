@@ -9,16 +9,17 @@ void FullStandard::bid(){
   string itemName;
   string seller;
   double bidAmount;
-  cout << "Enter an item name :";
+  cout << "Enter an item name: ";
   cin >> itemName;
-  cout << "Enter the seller name :";
+  cout << "Enter the seller name: ";
   cin >> seller;
   Item item = AvailableItemsFileManager::findItem(itemName, seller);
+  if(item.getItemName() == "")
+    cout << "no item exists" << endl;
   double lastBid = item.getCurrentBid();
   double amount;
-  cout << "Enter the amount to bid(current bid:" << lastBid << ") :\n";
+  cout << "Enter the amount to bid(current bid:" << lastBid << "):";
   cin >> amount;
-  cout << "here" << endl;
   if (amount > credit){
     cout << "Not enough credit to place bid.\n";
     return;
@@ -30,18 +31,44 @@ void FullStandard::bid(){
 //Putting an item up for auction
 void FullStandard::advertise(){
   //cout << "FullStandard::advertise" << endl;
-  cout << "Enter Item Name :";
+  const int nameLimit = 25;
+  const double bidLimit = 999.99;
+  const int maxDays = 100;
+
   string itemName;
-  cin >> itemName;
-  cout << "Enter starting bid :";
   double minimumBid;
-  cin >> minimumBid;
-  cout << "Enter auction end date :";
   int numDays;
-  cin >> numDays;
+
+  cout << "Enter Item Name :";
+  cin.ignore();
+  getline(cin, itemName);
+
+  if (itemName.length() <= nameLimit ){
+    cout << "Enter starting bid :";
+    cin >> minimumBid;
+    if (minimumBid <= bidLimit){
+      cout << "Enter auction end date :";
+      cin >> numDays;
+      if (numDays <= maxDays){
+        cout << itemName << " has now been posted" << endl;
+        DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
+      }
+      else{
+        cout << "Error: Number of days exceeds max days" << endl;
+        return;
+      }
+    }else{
+      cout << "Error: Bid price exceeds max limit" << endl;
+      return;
+    }
+  }else{
+    cout << "Error: Item name exceeds character limit" << endl;
+    return;
+  }
+  
+  
   //AvailableItemsFileManager::addItem(name, minimumBid, endDate, *this);
-  //cout << "here" << endl;
-  DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);
+ 
 }
 
 

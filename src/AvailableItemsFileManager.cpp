@@ -37,19 +37,22 @@ double AvailableItemsFileManager::parseCurrentBid(string line){
 	
 //Finding existing user in Current User Accounts File
 Item AvailableItemsFileManager::findItem(string itemName, string sellerName){
-	ifstream in("availableitems.txt");
+	ifstream in(fileName);
 	string line;
 	int l = itemName.length();
 
 	if (in.is_open()){
+		cout << "is open" << endl;
 		while(getline(in,line)){
-  			if(isItem(line, itemName)){
+			cout << "line: " << line << endl;
+  		if(isItem(line, itemName)){
 				double currentBid = parseCurrentBid(line);
 				return Item(itemName, sellerName, currentBid);
-	    	}
-    	}
-    	in.close();
+	    }
     }
+    in.close();
+  }
+	in.close();
 	//cout << "CurrentUserAccountsFileManager::findUser : No user found" << endl;
 	return Item("","",0);
 }

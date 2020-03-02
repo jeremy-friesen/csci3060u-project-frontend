@@ -78,6 +78,7 @@ User* CurrentUserAccountsFileManager::findUser(string username){
 		}
 		in.close();
 	}
+	in.close();
 	//cout << "CurrentUserAccountsFileManager::findUser : No user found" << endl;
 	return new Admin();
 }

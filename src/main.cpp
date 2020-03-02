@@ -61,8 +61,8 @@ void printMenu(){
   cout << "logout" << endl;
 
   if (user->getUserType() == "AA"){
-    cout << "create user" << endl;
-    cout << "delete user" << endl;
+    cout << "create user = 'create'" << endl;
+    cout << "delete user = 'delete'" << endl;
     cout << "bid" << endl;
     cout << "advertise" << endl;
     cout << "refund" << endl;
@@ -76,7 +76,7 @@ void printMenu(){
     cout << "advertise" << endl;
   }
 
-  cout << "add credit" << endl;
+  cout << "add credit = 'add'" << endl;
 }
 
 
@@ -195,15 +195,15 @@ int main(int argc, char* argv[]){
       //cout << "here" << endl;
       if(userCommand == "login"){
         login();
-      }else if(userCommand == "add credit"){
+      }else if(userCommand == "add"){
         addCredit();
       }else if(userCommand == "bid"){
         bid();
       }else if(userCommand == "advertise"){
         advertise();
-      }else if(userCommand == "create user"){
+      }else if(userCommand == "create"){
         createUser();
-      }else if(userCommand == "delete user"){
+      }else if(userCommand == "delete"){
         deleteUser();
       }else if(userCommand == "refund"){
         refund();

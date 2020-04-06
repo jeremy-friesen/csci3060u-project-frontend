@@ -36,19 +36,22 @@ void FullStandard::advertise(){
   const int maxDays = 100;
 
   string itemName;
-  double minimumBid;
+  string minimumBid;
   int numDays;
 
   cout << "Enter Item Name :";
-  cin.ignore();
-  getline(cin, itemName);
+  cin >> itemName;
+  //cin.ignore();
+  //getline(cin, itemName);
 
-  if (itemName.length() <= nameLimit ){
+  if (itemName.length() <= nameLimit){
     cout << "Enter starting bid :";
     cin >> minimumBid;
-    if (minimumBid <= bidLimit){
-      cout << "Enter auction end date :";
+    if (stod(minimumBid) <= bidLimit){
       cin >> numDays;
+      if(numDays > maxDays){
+        numDays = maxDays;
+      }
       if (numDays <= maxDays){
         cout << itemName << " has now been posted" << endl;
         DailyTransactionFileManager::addAdvertiseTransaction(itemName, username, numDays, minimumBid);

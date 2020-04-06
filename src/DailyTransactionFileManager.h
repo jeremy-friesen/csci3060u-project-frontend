@@ -30,6 +30,10 @@ public:
 
 	static string formatCredit(double credit);
 
+	static string formatCredit(string credit);
+
+	static string formatBid(string credit);
+
 	static string formatItemName(string itemName);
 
 	static string formatInt(int i);
@@ -50,10 +54,10 @@ public:
 	static void addEndSessionTransaction(string username, string userType, double credit);
 
 	// called after refund
-	static void addRefundTransaction(string buyerUsername, string sellerUsername, double refundCredit);
+	static void addRefundTransaction(string buyerUsername, string sellerUsername, string refundCredit);
 
 	// called after advertise
-	static void addAdvertiseTransaction(string itemName, string sellerUsername, int numDays, double minBid);
+	static void addAdvertiseTransaction(string itemName, string sellerUsername, int numDays, string minBid);
 
 	// called after bid
 	static void addBidTransaction(string itemName, string sellerName, string buyerName, double bid);

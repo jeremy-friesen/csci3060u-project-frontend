@@ -1,1 +1,1 @@
-06 accountUsername FS 005.00
+06 fullUsername    FS 000005.00

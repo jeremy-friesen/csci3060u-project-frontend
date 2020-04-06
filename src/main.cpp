@@ -140,7 +140,7 @@ void refund(){
   }else{
     string buyerUsername;
     string sellerUsername;
-    double amount;
+    string amount;
 
     cout << "Enter the buyer’s account name: " << endl;
     cin >> buyerUsername;
@@ -205,7 +205,7 @@ int main(int argc, char* argv[]){
       //cout << "here" << endl;
       if(userCommand == "login"){
         login();
-      }else if(userCommand == "add"){
+      }else if(userCommand == "add" || userCommand == "addCredit" || userCommand == "addcredit"){
         addCredit();
       }else if(userCommand == "bid"){
         bid();

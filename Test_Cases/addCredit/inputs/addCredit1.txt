@@ -1,6 +1,6 @@
 login
 adminUsername
 addCredit
-accountUsername
-5
+fullUsername
+5.00
 exit

@@ -3,5 +3,5 @@ adminUsername
 refund
 buyUsername
 sellUsername
-50
+50.00
 exit

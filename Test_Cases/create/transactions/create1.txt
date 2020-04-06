@@ -1,1 +1,1 @@
-01 newUsername____ AA 000000.00
+01 newUsername     AA 000000.00

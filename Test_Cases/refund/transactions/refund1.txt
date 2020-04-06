@@ -1,1 +1,1 @@
-05 buyUsername____ sellUsername___ 050.00
+05 buyUsername     sellUsername    000050.00

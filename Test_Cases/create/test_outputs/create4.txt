@@ -1,6 +1,5 @@
 Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
-Enter a username for the new account:
-Error: Username must be less than 15 characters
+Enter a username for the new account:Error: Username must be less than 15 characters
 Enter Transaction:

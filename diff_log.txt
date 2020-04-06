@@ -1,8 +1,28 @@
 ______________________________________________
+TEST login1.txt OUTPUT: BAD
+0a1,3
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+
+
+
+______________________________________________
+TEST login2.txt OUTPUT: BAD
+0a1,5
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+> Error: Already logged in
+> Enter Transaction:
+
+
+
+______________________________________________
 TEST login3.txt OUTPUT: BAD
-3c3
-< Enter Transaction:
----
+0a1,3
+> Enter Transaction:
+> Enter Username: Login unsuccessful.
 > Enter Transaction:
 \ No newline at end of file
 
@@ -10,9 +30,11 @@ TEST login3.txt OUTPUT: BAD
 
 ______________________________________________
 TEST login4.txt OUTPUT: BAD
-5c5
-< Enter Transaction:
----
+0a1,5
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+> Insufficient privileges.
 > Enter Transaction:
 \ No newline at end of file
 
@@ -20,23 +42,20 @@ TEST login4.txt OUTPUT: BAD
 
 ______________________________________________
 TEST login5.txt OUTPUT: BAD
-0a1
+0a1,3
 > Enter Username:
-2,5c3
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter the buyer’s account name: 
-< Enter Transaction:
----
+> Enter Transaction:
 > Enter Buyer:
 
 
 
 ______________________________________________
 TEST logout1.txt OUTPUT: BAD
-5c5
-< Enter Transaction:
----
+0a1,5
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+> Thank you for visiting! Goodbye!
 > Enter Transaction:
 \ No newline at end of file
 
@@ -44,739 +63,42 @@ TEST logout1.txt OUTPUT: BAD
 
 ______________________________________________
 TEST logout2.txt OUTPUT: BAD
-3c3
-< Enter Transaction:
----
+0a1,3
+> Enter Transaction:
+> Cannot process request, no user is logged in.
 > Enter Transaction:
 \ No newline at end of file
+
+
+
+______________________________________________
+TEST logout3.txt OUTPUT: BAD
+0a1,7
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+> Thank you for visiting! Goodbye!
+> Enter Transaction:
+> Cannot process request, no user is logged in.
+> Enter Transaction:
 
 
 
 ______________________________________________
 TEST create1.txt OUTPUT: BAD
-1,6c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter new account�s Username:
-> Enter new account�s Password:
-> Enter User Type:
-> Success! Account has been created!
+0a1,4
+> Enter Transaction:
+> Enter Username: Logged in successfully.
+> Enter Transaction:
+> Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
 
 
 
 ______________________________________________
 TEST create1.txt TRANSACTION: BAD
-1c1
-< 01 newUsername     newPassword 00.000000
----
-> 01 newUsername____ AA 000000.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST create2.txt OUTPUT: BAD
-1,4c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter new account�s Username:
-> Enter new account�s Password:
-> Enter User Type:
-> Error: Missing account information...
-
-
-
-______________________________________________
-TEST create2.txt TRANSACTION: BAD
-1d0
-< 01 newUsername     exit 00.000000
-
-
-
-______________________________________________
-TEST create3.txt OUTPUT: BAD
-1,4c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username:
-> Error: Username must be less than 15 characters
-
-
-
-______________________________________________
-TEST create3.txt TRANSACTION: BAD
-1d0
-< 01 newUsername123456 exit 00.000000
-
-
-
-______________________________________________
-TEST create4.txt OUTPUT: BAD
-1,6c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter a username for the new account:Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter new account�s Username:
-> Enter new account�s Password:
-> Enter User Type:
-> Error: Username already exists...
-
-
-
-______________________________________________
-TEST create4.txt TRANSACTION: BAD
-1d0
-< 01 user1           full 00.000000
-
-
-
-______________________________________________
-TEST create5.txt OUTPUT: BAD
-1,5c1,3
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Insufficient privileges.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Error: Not admin
-
-
-
-______________________________________________
-TEST delete1.txt OUTPUT: BAD
-1,4c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter the account name to delete:Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username to delete:
-> User existingUser successfully deleted
-
-
-
-______________________________________________
-TEST delete1.txt TRANSACTION: BAD
-1c1
-< 02 existingUser     00.000000
----
-> 02 existingUser___ AA 000000.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST delete2.txt OUTPUT: BAD
-1,5c1,3
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Insufficient privileges.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Error: Insufficient Privileges.
-
-
-
-______________________________________________
-TEST delete3.txt OUTPUT: BAD
-1,4c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter the account name to delete:Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username to delete:
-> Error: User doesn�t exist
-
-
-
-______________________________________________
-TEST delete3.txt TRANSACTION: BAD
-1d0
-< 02 nonExistantUsername  00.000000
-
-
-
-______________________________________________
-TEST delete4.txt OUTPUT: BAD
-1,4c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter the account name to delete:Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username to delete:
-> Error: Cannot delete your own account
-
-
-
-______________________________________________
-TEST delete4.txt TRANSACTION: BAD
-1d0
-< 02 thisUsername     00.000000
-
-
-
-______________________________________________
-TEST advertise1.txt OUTPUT: BAD
-1,5c1,7
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter Item Name :Enter starting bid :Enter auction end date :Error: Number of days exceeds max days
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter item name:
-> Enter item price:
-> Enter number of days you want the auction to last:
-> 
-> Nintendo Switch has now been posted
-
-
-
-______________________________________________
-TEST advertise1.txt TRANSACTION: BAD
 0a1
-> 03 Nintendo Switch____ fullUsername___ 050 350.00
+> 01 newUsername     AA 000000.00
 \ No newline at end of file
-
-
-
-______________________________________________
-TEST advertise2.txt OUTPUT: BAD
-1,5c1,3
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Insufficient privileges.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Error: You do not have privileges
-
-
-
-______________________________________________
-TEST advertise3.txt OUTPUT: BAD
-1,5c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter Item Name :Enter starting bid :Enter auction end date :Error: Number of days exceeds max days
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter item name:
-> Error: Item name exceeds character limit
-
-
-
-______________________________________________
-TEST advertise4.txt OUTPUT: BAD
-1,5c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter Item Name :Enter starting bid :Enter auction end date :Error: Number of days exceeds max days
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter item name:
-> Enter item price:
-> Error: Minimum bid price exceeds the max price of an item
-
-
-
-______________________________________________
-TEST advertise5.txt OUTPUT: BAD
-1,5c1,7
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter Item Name :Enter starting bid :Enter auction end date :Error: Number of days exceeds max days
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter item name:
-> Enter item price:
-> Enter number of days you want the auction to last:
-> 
-> Error: Number of days exceeds the max amount of time the auction can last
-
-
-
-______________________________________________
-TEST bid1.txt OUTPUT: BAD
-1,6c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter an item name: Enter the seller name: Enter the amount to bid(current bid:10):
-> Enter Transaction:
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid1.txt TRANSACTION: BAD
-1c1
-< 04 basketball          someUs3r        fullUsername    18.000000
-\ No newline at end of file
----
-> basketball_________ user231________ 018.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid10.txt OUTPUT: BAD
-1,6c1,8
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Current Highest Bid: $15
-> 
-> Error: You do not have sufficient credit to place a bid
-
-
-
-______________________________________________
-TEST bid10.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    16.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid2.txt OUTPUT: BAD
-1,5c1,3
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Insufficient privileges.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Error: You do not have the privileges
-
-
-
-______________________________________________
-TEST bid3.txt OUTPUT: BAD
-1,8c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< line: sneakers            exampleUsername someBidder      005.00
-< no item exists
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> 
-> Error: Item name and/or Seller name and/or bid amount cannot be left empty
-
-
-
-______________________________________________
-TEST bid3.txt TRANSACTION: BAD
-1d0
-< 04                                     fullUsername    00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid4.txt OUTPUT: BAD
-1,8c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< line: sneakers            exampleUsername someBidder      005.00
-< no item exists
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> 
-> Error: Item does not exist in the system
-
-
-
-______________________________________________
-TEST bid4.txt TRANSACTION: BAD
-1d0
-< 04                     exit            fullUsername    00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid5.txt OUTPUT: BAD
-1,6c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Error: Seller�s username does not exist
-
-
-
-______________________________________________
-TEST bid5.txt TRANSACTION: BAD
-1d0
-< 04 basketball          users1213       fullUsername    00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid6.txt OUTPUT: BAD
-1,6c1,8
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Current highest bid: $15
-> 
-> Error: Bid must be greater than the current highest bid
-
-
-
-______________________________________________
-TEST bid6.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    13.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid7.txt OUTPUT: BAD
-1,6c1,8
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Current highest bid: $15
-> 
-> Error: Bid must be at least 5% greater than the current highest bid
-
-
-
-______________________________________________
-TEST bid7.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        fullUsername    15.500000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid8.txt OUTPUT: BAD
-1,7c1,8
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name :Enter the seller name :is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0) :
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Current highest bid: $15
-> 
-> Error: Bid must be greater than the current highest bid
-
-
-
-______________________________________________
-TEST bid8.txt TRANSACTION: BAD
-1d0
-< 04 basketball          someUs3r        adminUsername   15.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST bid9.txt OUTPUT: BAD
-1,6c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter an item name: Enter the seller name: is open
-< line: basketball          someUs3r        bidder          010.00
-< Enter the amount to bid(current bid:0):Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> What is the item name?
-> What is the seller�s username?
-> 
-> Error: Cannot bid on your own item
-
-
-
-______________________________________________
-TEST bid9.txt TRANSACTION: BAD
-1d0
-< 04 basketball          currentUser     fullUsername    00.000000
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST refund1.txt OUTPUT: BAD
-7c7
-< Enter Transaction:
----
-> Enter Transaction:
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST refund1.txt TRANSACTION: BAD
-1c1
-< 05 buyUsername     sellUsername    50.000000
----
-> 05 buyUsername____ sellUsername___ 050.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST refund2.txt OUTPUT: BAD
-1,8d0
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Enter the buyer’s account name: 
-< Enter the seller’s account name: 
-< Enter the amount of credit to transfer: 
-< ERROR: One or both of the given users does not exist...
-< Enter Transaction:
-
-
-
-______________________________________________
-TEST refund3.txt OUTPUT: BAD
-6c6,8
-< Enter Transaction:
----
-> Enter the amount of credit to transfer: 
-> ERROR: One or both of the given users does not exist...
-> Enter Transaction:
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST addCredit1.txt OUTPUT: BAD
-1,9c1,6
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username:
-> Enter Credit Amount:
-> Success! Credit amount has been transferred to the user!
-> <Daily Transaction File>
-
-
-
-______________________________________________
-TEST addCredit1.txt TRANSACTION: BAD
-0a1
-> 06 accountUsername FS 005.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST addCredit2.txt OUTPUT: BAD
-1,7c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Credit Amount:
-> Success! Credit amount has been transferred to your account!
-> <Daily Transaction File>
-
-
-
-______________________________________________
-TEST addCredit2.txt TRANSACTION: BAD
-0a1
-> 06 fullUsername___ FS 005.00
-\ No newline at end of file
-
-
-
-______________________________________________
-TEST addCredit3.txt OUTPUT: BAD
-1,9c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username:
-> Enter Credit Amount:
-> Error: Given username does not exist in the system...
-
-
-
-______________________________________________
-TEST addCredit4.txt OUTPUT: BAD
-1,9c1,5
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Username:
-> Enter Credit Amount:
-> Error: Credit amount exceeds limit of $999.99
-
-
-
-______________________________________________
-TEST addCredit5.txt OUTPUT: BAD
-1,7c1,4
-< Enter Transaction:
-< Enter Username: Logged in successfully.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
-< Unrecognized command entered.Please re - enter.
-< Enter Transaction:
----
-> Enter Username:
-> Enter Command:
-> Enter Credit Amount:
-> Error: Credit amount exceeds limit of $999.99
 
 
 

@@ -7,3 +7,10 @@
 01 a               exit 00.000000
 06 buyUsername     BS 10.000000
 01 a               a 00.000000
+01 newUsername     AA 00.000000
+01 newUsername     AA 00.000000
+01 newUsername     AA 00.000000
+01 newUsername     AA 00.000000
+01 newUsername     AA 00.000000
+01 newUsername     AA 000000.00
+03 NintendoSwitch      adminUsername   010 00000350.03 NintendoSwitch      fullUsername    010 00000350.03 NintendoSwitch      fullUsername    050 00000350.03 NintendoSwitch      fullUsername    050 00000350.

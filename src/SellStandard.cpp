@@ -12,7 +12,7 @@ void SellStandard::advertise(){
   const int maxDays = 100;
 
   string itemName;
-  double minimumBid;
+  string minimumBid;
   int numDays;
 
   cout << "Enter Item Name :";
@@ -22,7 +22,7 @@ void SellStandard::advertise(){
   if (itemName.length() <= nameLimit ){
     cout << "Enter starting bid :";
     cin >> minimumBid;
-    if (minimumBid <= bidLimit){
+    if (stod(minimumBid) <= bidLimit){
       cout << "Enter auction end date :";
       cin >> numDays;
       if (numDays <= maxDays){

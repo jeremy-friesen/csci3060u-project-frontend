@@ -1,5 +1,7 @@
 #pragma once
 #include "DailyTransactionFileManager.h"
+#include <iomanip>
+#include <sstream>
 
 //Description: Manages and updates the data stored in the Daily Transaction    //            File
 //Contains the daily transaction lines for the user and any of their refund,         advertise or bid actions
@@ -21,10 +23,35 @@ string DailyTransactionFileManager::formatUsername(string username){
 
 string DailyTransactionFileManager::formatCredit(double credit){
 	string s = to_string(credit);
+	if(s.length() >= 4){
+		s = s.substr(0,4);
+	}
 	while(s.length() < 9){
 		s = "0" + s;
 	}
 	return s;
+}
+
+string DailyTransactionFileManager::formatCredit(string credit)
+{
+	//string s = to_string(credit);
+	/*if (s.length() >= 4)
+	{
+		s = s.substr(0, 4);
+	}*/
+	while (credit.length() < 9)
+	{
+		credit = "0" + credit;
+	}
+	return credit;
+}
+
+string DailyTransactionFileManager::formatBid(string credit){
+	//string s = to_string(credit);
+	while(credit.length() < 6){
+		credit = "0" + credit;
+	}
+	return credit;
 }
 
 string DailyTransactionFileManager::formatItemName(string itemName){
@@ -54,6 +81,7 @@ void DailyTransactionFileManager::addCreateUserTransaction(string newUsername, s
 	string line = "01 ";
 	line += formatUsername(newUsername) + " " + userType + " " + formatCredit(0.00) + "\n";
 	appendLine(line);
+	cout << "HERE" << endl;
 }
 
 // called after delete transaction
@@ -78,7 +106,7 @@ void DailyTransactionFileManager::addEndSessionTransaction(string username, stri
 }
 
 // called after refund
-void DailyTransactionFileManager::addRefundTransaction(string buyerUsername, string sellerUsername, double refundCredit){
+void DailyTransactionFileManager::addRefundTransaction(string buyerUsername, string sellerUsername, string refundCredit){
 	string line = "05 ";
 	line += formatUsername(buyerUsername) + " " + formatUsername(sellerUsername) + " " 
 				+ formatCredit(refundCredit) + "\n";
@@ -86,10 +114,10 @@ void DailyTransactionFileManager::addRefundTransaction(string buyerUsername, str
 }
 
 // called after advertise
-void DailyTransactionFileManager::addAdvertiseTransaction(string itemName, string sellerUsername, int numDays, double minBid){
+void DailyTransactionFileManager::addAdvertiseTransaction(string itemName, string sellerUsername, int numDays, string minBid){
 	string line = "03 ";
 	line += formatItemName(itemName) + " " + formatUsername(sellerUsername) 
-					+ " " + formatInt(numDays) + " " + formatCredit(minBid);
+					+ " " + formatInt(numDays) + " " + formatBid(minBid);
 	appendLine(line);
 }
 

@@ -19,6 +19,12 @@ void Admin::createUser(){
 
   cout << "Enter type of user (AA=admin, FS=full-standard, BS=buy-standard, SS=sell-standard):";
   cin >> userType;
+
+  if(userType == "exit"){
+    cout << "exiting transaction" << endl;
+    return;
+  }
+
   //TODO: query to make sure username is valid/not taken
   //User newUser(username, userType);
   DailyTransactionFileManager::addCreateUserTransaction(username, userType);
@@ -106,7 +112,7 @@ void Admin::advertise(){
   const int maxDays = 100;
 
   string itemName;
-  double minimumBid;
+  string minimumBid;
   int numDays;
 
   cout << "Enter Item Name :";
@@ -116,7 +122,7 @@ void Admin::advertise(){
   if (itemName.length() <= nameLimit ){
     cout << "Enter starting bid :";
     cin >> minimumBid;
-    if (minimumBid <= bidLimit){
+    if (stod(minimumBid) <= bidLimit){
       cout << "Enter auction end date :";
       cin >> numDays;
       if (numDays <= maxDays){

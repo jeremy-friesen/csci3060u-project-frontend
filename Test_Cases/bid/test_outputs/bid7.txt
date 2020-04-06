@@ -1,6 +1,4 @@
 Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
-Enter an item name :Enter the seller name :Enter the amount to bid(current bid:0) :
-here
-Enter Transaction:
+Enter an item name: Enter the seller name: Enter the amount to bid(current bid:0):Enter Transaction:

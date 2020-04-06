@@ -1,4 +1,5 @@
 Enter Transaction:
 Enter Username: Logged in successfully.
 Enter Transaction:
-Enter Item Name :Enter starting bid :Enter auction end date :Enter Transaction:
+Enter Item Name :Error: Item name exceeds character limit
+Enter Transaction:

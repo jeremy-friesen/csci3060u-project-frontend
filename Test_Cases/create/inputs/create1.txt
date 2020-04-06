@@ -2,5 +2,5 @@ login
 adminUsername
 create
 newUsername
-admin
+AA
 exit
